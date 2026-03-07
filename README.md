@@ -1,42 +1,28 @@
 # 🌌 Rainmeter Desktop Dashboard for OLED Moinitor
 
-
-
 ![스킨 미리보기](./readme_assets/skin_image.png)
-
-
+<br />
+<br />
+## <div align=center>* 해당 스킨은 Google Gemini를 이용하여 제작한 스킨입니다. *</div>
+<br />
+<br />
 
 **Rainmeter desktop dashboard**는 OLED 모니터에서 번인(Burn-in)현상을 늦추는 목적으로 바탕화면 아이콘 대신 사용하기 위해 만든 레인미터(Rainmeter) 아이콘 오버레이 스킨입니다.
 
-
-
 복잡한 설정 없이 `Shortcuts` 폴더에 단축키(`.lnk`, `.url`)를 넣고 스킨 새로고침 작업만 하면 됩니다.
-
-
 
 ---
 
-
-
 ## ✨ 주요 기능 (Key Features)
 
-
-
 ### 🛡️ Pixel Shifting
-
 * 스킨이 위치한 모니터의 **정중앙을 자동 추적**하여 배치
 * 설정한 주기(기본 `3600`초)마다 중앙 배치때 좌표를 기준으로 가로/세로 각각 -4px, -2px, 0px, +2px, +4px를 순회
 
-
-
 ### ⚡ 툴팁
-
 * 긴 이름을 가진 아이콘은 말줄임표(`...`)처리되기 때문에 마우스를 아이콘 위에 0.5초 이상 올려두면 툴팁으로 아이콘의 전체 이름이 표시
 
-
-
 ### 📂 동적 아이콘 관리 \& 자동 페이징
-
 * 스킨 하단의 **\[➕ 추가]** 버튼을 누르면 Shortcuts 폴더가 열리며, 이곳에 바로가기 파일을 넣으면 동작
 * 한 화면에 표시되는 아이콘은 60개며 이를 초과할 경우 **자동으로 \[◀ 이전] / \[다음 ▶] 버튼이 활성화**
 * 아이콘 호버 시 부드럽게 흑백에서 컬러로 전환되며, 우측 상단에 나타나는 **\[✖] 버튼 클릭 시 Shortcuts에 있는 바로가기 파일이 삭제**
@@ -44,78 +30,41 @@
 
 
 ### ➕ 추가 기능
-
-* **순서 정렬:** 단축키 이름 앞에 `#001\_` 형태의 접두사를 붙이면 원하는 순서대로 배치 (화면에서는 접두사가 자동으로 숨겨짐)
-
-
+* **순서 정렬:** 단축키 이름 앞에 `#001_` 형태의 접두사를 붙이면 원하는 순서대로 배치 (화면에서는 접두사가 자동으로 숨겨짐)
 
 ---
 
-
-
-## 📥 설치 방법 (Installation)
-
-
-
-1. 최신 버전의 \[Rainmeter](https://www.rainmeter.net/)를 설치
-
-2\. \[Releases](../../releases) 페이지에서 최신 `.rmskin` 패키지 파일을 다운로드하여 실행
-
-3\. 바탕화면에 스킨이 로드되면, 하단의 **\[➕ 추가]** 버튼을 눌러 원하는 프로그램의 단축키(`.lnk`)들을 폴더에 복사해 넣고 **\[🔄 새로고침]**을 클릭
-
-
+## 📥 설치 방법 (Installation)  
+1. 최신 버전의 [Rainmeter](https://www.rainmeter.net/)를 설치  
+2. [Releases](../../releases) 페이지에서 최신 `.rmskin` 패키지 파일을 다운로드하여 실행  
+3. 바탕화면에 스킨이 로드되면, 하단의 **\[➕ 추가]** 버튼을 눌러 원하는 프로그램의 단축키(`.lnk`)들을 폴더에 복사해 넣고 **\[🔄 새로고침]**을 클릭  
 
 ---
-
-
 
 ## ⚙️ 설정 및 조작 (Usage \& Configuration)
 
-
-
-### 1\. 아이콘 순서 정렬하기
+### 1. 아이콘 순서 정렬하기
 
 아이콘의 배치 순서를 바꾸고 싶다면 파일 이름 앞에 숫자를 붙이면 된다.
-
-* 예시: `#001\_Chrome.lnk`, `#002\_Steam.lnk`
+* 예시: `#001_Chrome.lnk`, `#002_Steam.lnk`
 * 화면에는 `Chrome`, `Steam`으로 깔끔하게 표시
 
-
-
 ### 2. 번인 방지(Pixel Shifting) 주기 변경
+* `@Resources\Variables.inc` 파일을 열고 `ShiftInterval` 값을 변경 (기본값: `3600`초)
 
-* `@Resources\\Variables.inc` 파일을 열고 `ShiftInterval` 값을 변경 (기본값: `3600`초)
-
-
-
-### 3\. 스킨의 아이콘 및 하단 네비게이터 투명도 설정
-
-* `@Resources\\Variables.inc` 파일을 열고 OffAlpha 및 OnAlpha를 수정
+### 3. 스킨의 아이콘 및 하단 네비게이터 투명도 설정
+* `@Resources\Variables.inc` 파일을 열고 OffAlpha 및 OnAlpha를 수정
 * `OffAlpha`: idle 상태의 불투명도 (0 ~ 255, 숫자가 낮을수록 투명해짐)
 * `OnAlpha`: active 상태의 불투명도 (0 ~ 255, 숫자가 낮을수록 투명해짐)
 
-
-
 ---
 
-
-
 ## 🛠️ 개발자용 정보 (For Developers)
-
-
-
 * `Generator.py`: 스킨 최상단에 포함된 이 파이썬 스크립트를 실행하면, 60세트의 그리드 아이콘 UI 코드가 담긴 `Meters.inc` 파일이 자동으로 생성. 생성된 파일은 `@Resources` 폴더에 저장하면 되며 기존 `Meters.inc`는 삭제하거나 덮어쓰기 하면 된다.
 * `Layout.lua`: 툴팁 렌더링, 타이머 검증, 삭제 로직, 픽셀 시프팅 등 스킨의 핵심 기능 로직이 작성되어 있음
 
-
-
 ---
-
-
 
 ## 📜 라이선스 (License)
 
-
-
-이 프로젝트는 \[MIT License](LICENSE)를 따릅니다.
-
+이 프로젝트는 [MIT License](LICENSE)를 따릅니다.
