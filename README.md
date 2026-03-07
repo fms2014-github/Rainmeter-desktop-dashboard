@@ -6,11 +6,11 @@
 
 
 
-**Rainmeter desktop dashboard**는 OLED 모니터에서 번인(Burn-in)현상을 늦추는 목적으로 바탕화면 아이콘 대신 사용하기 위해 만든 레인미터(Rainmeter) 아이콘 오버레이 스킨
+**Rainmeter desktop dashboard**는 OLED 모니터에서 번인(Burn-in)현상을 늦추는 목적으로 바탕화면 아이콘 대신 사용하기 위해 만든 레인미터(Rainmeter) 아이콘 오버레이 스킨입니다.
 
 
 
-복잡한 설정 없이 `Shortcuts` 폴더에 단축키(`.lnk`, `.url`)를 넣기만 하면 된다.
+복잡한 설정 없이 `Shortcuts` 폴더에 단축키(`.lnk`, `.url`)를 넣고 스킨 새로고침 작업만 하면 됩니다.
 
 
 
