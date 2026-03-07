@@ -2,7 +2,7 @@
 
 
 
-!\[스킨 미리보기](./readme\_assets/skin\_image.png)
+![스킨 미리보기](./readme_assets/skin_image.png)
 
 
 
