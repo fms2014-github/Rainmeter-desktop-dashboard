@@ -1,4 +1,4 @@
-# 🌌 Rainmeter desktop dashboard for OLED Moinitor
+# 🌌 Rainmeter Desktop Dashboard for OLED Moinitor
 
 
 
