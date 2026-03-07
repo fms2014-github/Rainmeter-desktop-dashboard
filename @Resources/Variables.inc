@@ -4,7 +4,7 @@ IconSize=48
 TextSize=11
 FontName=Pretendard SemiBold
 TextColor=220,220,220
-OffAlpha=10
+OffAlpha=80
 OnAlpha=255
 TextWidth=100
 
