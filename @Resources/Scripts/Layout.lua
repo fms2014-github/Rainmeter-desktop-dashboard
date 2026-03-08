@@ -18,7 +18,8 @@ function Initialize()
     areaH = tonumber(SKIN:GetVariable('AreaH'))
     
     cellW = areaW / cols
-    cellH = areaH / rows
+    -- ★ 수정됨: 하단 버튼이 위치할 80px의 안전 구역을 제외하고 셀 높이를 계산합니다.
+    cellH = (areaH - 80) / rows
     maxIcons = cols * rows
     
     -- Variables.inc에서 시프팅 주기를 불러옵니다. 없으면 기본값 60(1분)
