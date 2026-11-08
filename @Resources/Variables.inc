@@ -2,7 +2,7 @@
 ; --- 디자인 설정 ---
 IconSize=48
 ; 바로가기 아이콘 표시 모드 (0 = 컬러, 1 = 흑백)
-IconGreyscale=0
+IconGreyscale=1
 TextSize=11
 FontName=Pretendard SemiBold
 TextColor=220,220,220

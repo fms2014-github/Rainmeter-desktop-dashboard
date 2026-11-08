@@ -1,8 +1,12 @@
 # 레인미터 60세트 자동 생성기 (파워쉘 제거 및 Lua 무음 삭제 적용)
 max_icons = 60
-file_content = """[StyleShortcutIcon]
-ImageAlpha=(#IconGreyscale# ? #GreyscaleAlpha# : #OffAlpha#)
+idle_alpha = "(#IconGreyscale# ? #GreyscaleAlpha# : #OffAlpha#)"
+file_content = f"""[StyleShortcutIcon]
+ImageAlpha={idle_alpha}
 Greyscale=#IconGreyscale#
+
+[StyleShortcutText]
+FontColor=#TextColor#,{idle_alpha}
 """
 
 for i in range(1, max_icons + 1):
@@ -45,13 +49,14 @@ DynamicVariables=1
 
 [MeterText{i}]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName{i}
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -59,7 +64,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon{i} ImageAlpha "#OnAlpha#"][!SetOption MeterIcon{i} Greyscale "0"][!SetOption MeterText{i} FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete{i} Hidden "0"][!UpdateMeter "MeterIcon{i}"][!UpdateMeter "MeterText{i}"][!UpdateMeter "MeterDelete{i}"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover({i}, 'MeasureName{i}')"]
-MouseLeaveAction=[!SetOption MeterIcon{i} ImageAlpha ""][!SetOption MeterIcon{i} Greyscale ""][!SetOption MeterText{i} FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete{i} Hidden "1"][!UpdateMeter "MeterIcon{i}"][!UpdateMeter "MeterText{i}"][!UpdateMeter "MeterDelete{i}"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover({i})"]
+MouseLeaveAction=[!SetOption MeterIcon{i} ImageAlpha ""][!SetOption MeterIcon{i} Greyscale ""][!SetOption MeterText{i} FontColor ""][!SetOption MeterDelete{i} Hidden "1"][!UpdateMeter "MeterIcon{i}"][!UpdateMeter "MeterText{i}"][!UpdateMeter "MeterDelete{i}"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover({i})"]
 LeftMouseUpAction=["[MeasurePath{i}]"]
 DynamicVariables=1
 

@@ -2,6 +2,9 @@
 ImageAlpha=(#IconGreyscale# ? #GreyscaleAlpha# : #OffAlpha#)
 Greyscale=#IconGreyscale#
 
+[StyleShortcutText]
+FontColor=#TextColor#,(#IconGreyscale# ? #GreyscaleAlpha# : #OffAlpha#)
+
 ; ========================================
 ; [1번 아이콘 세트]
 ; ========================================
@@ -40,13 +43,14 @@ DynamicVariables=1
 
 [MeterText1]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName1
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -54,7 +58,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon1 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon1 Greyscale "0"][!SetOption MeterText1 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete1 Hidden "0"][!UpdateMeter "MeterIcon1"][!UpdateMeter "MeterText1"][!UpdateMeter "MeterDelete1"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(1, 'MeasureName1')"]
-MouseLeaveAction=[!SetOption MeterIcon1 ImageAlpha ""][!SetOption MeterIcon1 Greyscale ""][!SetOption MeterText1 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete1 Hidden "1"][!UpdateMeter "MeterIcon1"][!UpdateMeter "MeterText1"][!UpdateMeter "MeterDelete1"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(1)"]
+MouseLeaveAction=[!SetOption MeterIcon1 ImageAlpha ""][!SetOption MeterIcon1 Greyscale ""][!SetOption MeterText1 FontColor ""][!SetOption MeterDelete1 Hidden "1"][!UpdateMeter "MeterIcon1"][!UpdateMeter "MeterText1"][!UpdateMeter "MeterDelete1"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(1)"]
 LeftMouseUpAction=["[MeasurePath1]"]
 DynamicVariables=1
 
@@ -110,13 +114,14 @@ DynamicVariables=1
 
 [MeterText2]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName2
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -124,7 +129,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon2 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon2 Greyscale "0"][!SetOption MeterText2 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete2 Hidden "0"][!UpdateMeter "MeterIcon2"][!UpdateMeter "MeterText2"][!UpdateMeter "MeterDelete2"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(2, 'MeasureName2')"]
-MouseLeaveAction=[!SetOption MeterIcon2 ImageAlpha ""][!SetOption MeterIcon2 Greyscale ""][!SetOption MeterText2 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete2 Hidden "1"][!UpdateMeter "MeterIcon2"][!UpdateMeter "MeterText2"][!UpdateMeter "MeterDelete2"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(2)"]
+MouseLeaveAction=[!SetOption MeterIcon2 ImageAlpha ""][!SetOption MeterIcon2 Greyscale ""][!SetOption MeterText2 FontColor ""][!SetOption MeterDelete2 Hidden "1"][!UpdateMeter "MeterIcon2"][!UpdateMeter "MeterText2"][!UpdateMeter "MeterDelete2"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(2)"]
 LeftMouseUpAction=["[MeasurePath2]"]
 DynamicVariables=1
 
@@ -180,13 +185,14 @@ DynamicVariables=1
 
 [MeterText3]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName3
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -194,7 +200,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon3 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon3 Greyscale "0"][!SetOption MeterText3 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete3 Hidden "0"][!UpdateMeter "MeterIcon3"][!UpdateMeter "MeterText3"][!UpdateMeter "MeterDelete3"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(3, 'MeasureName3')"]
-MouseLeaveAction=[!SetOption MeterIcon3 ImageAlpha ""][!SetOption MeterIcon3 Greyscale ""][!SetOption MeterText3 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete3 Hidden "1"][!UpdateMeter "MeterIcon3"][!UpdateMeter "MeterText3"][!UpdateMeter "MeterDelete3"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(3)"]
+MouseLeaveAction=[!SetOption MeterIcon3 ImageAlpha ""][!SetOption MeterIcon3 Greyscale ""][!SetOption MeterText3 FontColor ""][!SetOption MeterDelete3 Hidden "1"][!UpdateMeter "MeterIcon3"][!UpdateMeter "MeterText3"][!UpdateMeter "MeterDelete3"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(3)"]
 LeftMouseUpAction=["[MeasurePath3]"]
 DynamicVariables=1
 
@@ -250,13 +256,14 @@ DynamicVariables=1
 
 [MeterText4]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName4
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -264,7 +271,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon4 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon4 Greyscale "0"][!SetOption MeterText4 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete4 Hidden "0"][!UpdateMeter "MeterIcon4"][!UpdateMeter "MeterText4"][!UpdateMeter "MeterDelete4"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(4, 'MeasureName4')"]
-MouseLeaveAction=[!SetOption MeterIcon4 ImageAlpha ""][!SetOption MeterIcon4 Greyscale ""][!SetOption MeterText4 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete4 Hidden "1"][!UpdateMeter "MeterIcon4"][!UpdateMeter "MeterText4"][!UpdateMeter "MeterDelete4"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(4)"]
+MouseLeaveAction=[!SetOption MeterIcon4 ImageAlpha ""][!SetOption MeterIcon4 Greyscale ""][!SetOption MeterText4 FontColor ""][!SetOption MeterDelete4 Hidden "1"][!UpdateMeter "MeterIcon4"][!UpdateMeter "MeterText4"][!UpdateMeter "MeterDelete4"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(4)"]
 LeftMouseUpAction=["[MeasurePath4]"]
 DynamicVariables=1
 
@@ -320,13 +327,14 @@ DynamicVariables=1
 
 [MeterText5]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName5
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -334,7 +342,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon5 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon5 Greyscale "0"][!SetOption MeterText5 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete5 Hidden "0"][!UpdateMeter "MeterIcon5"][!UpdateMeter "MeterText5"][!UpdateMeter "MeterDelete5"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(5, 'MeasureName5')"]
-MouseLeaveAction=[!SetOption MeterIcon5 ImageAlpha ""][!SetOption MeterIcon5 Greyscale ""][!SetOption MeterText5 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete5 Hidden "1"][!UpdateMeter "MeterIcon5"][!UpdateMeter "MeterText5"][!UpdateMeter "MeterDelete5"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(5)"]
+MouseLeaveAction=[!SetOption MeterIcon5 ImageAlpha ""][!SetOption MeterIcon5 Greyscale ""][!SetOption MeterText5 FontColor ""][!SetOption MeterDelete5 Hidden "1"][!UpdateMeter "MeterIcon5"][!UpdateMeter "MeterText5"][!UpdateMeter "MeterDelete5"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(5)"]
 LeftMouseUpAction=["[MeasurePath5]"]
 DynamicVariables=1
 
@@ -390,13 +398,14 @@ DynamicVariables=1
 
 [MeterText6]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName6
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -404,7 +413,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon6 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon6 Greyscale "0"][!SetOption MeterText6 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete6 Hidden "0"][!UpdateMeter "MeterIcon6"][!UpdateMeter "MeterText6"][!UpdateMeter "MeterDelete6"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(6, 'MeasureName6')"]
-MouseLeaveAction=[!SetOption MeterIcon6 ImageAlpha ""][!SetOption MeterIcon6 Greyscale ""][!SetOption MeterText6 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete6 Hidden "1"][!UpdateMeter "MeterIcon6"][!UpdateMeter "MeterText6"][!UpdateMeter "MeterDelete6"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(6)"]
+MouseLeaveAction=[!SetOption MeterIcon6 ImageAlpha ""][!SetOption MeterIcon6 Greyscale ""][!SetOption MeterText6 FontColor ""][!SetOption MeterDelete6 Hidden "1"][!UpdateMeter "MeterIcon6"][!UpdateMeter "MeterText6"][!UpdateMeter "MeterDelete6"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(6)"]
 LeftMouseUpAction=["[MeasurePath6]"]
 DynamicVariables=1
 
@@ -460,13 +469,14 @@ DynamicVariables=1
 
 [MeterText7]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName7
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -474,7 +484,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon7 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon7 Greyscale "0"][!SetOption MeterText7 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete7 Hidden "0"][!UpdateMeter "MeterIcon7"][!UpdateMeter "MeterText7"][!UpdateMeter "MeterDelete7"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(7, 'MeasureName7')"]
-MouseLeaveAction=[!SetOption MeterIcon7 ImageAlpha ""][!SetOption MeterIcon7 Greyscale ""][!SetOption MeterText7 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete7 Hidden "1"][!UpdateMeter "MeterIcon7"][!UpdateMeter "MeterText7"][!UpdateMeter "MeterDelete7"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(7)"]
+MouseLeaveAction=[!SetOption MeterIcon7 ImageAlpha ""][!SetOption MeterIcon7 Greyscale ""][!SetOption MeterText7 FontColor ""][!SetOption MeterDelete7 Hidden "1"][!UpdateMeter "MeterIcon7"][!UpdateMeter "MeterText7"][!UpdateMeter "MeterDelete7"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(7)"]
 LeftMouseUpAction=["[MeasurePath7]"]
 DynamicVariables=1
 
@@ -530,13 +540,14 @@ DynamicVariables=1
 
 [MeterText8]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName8
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -544,7 +555,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon8 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon8 Greyscale "0"][!SetOption MeterText8 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete8 Hidden "0"][!UpdateMeter "MeterIcon8"][!UpdateMeter "MeterText8"][!UpdateMeter "MeterDelete8"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(8, 'MeasureName8')"]
-MouseLeaveAction=[!SetOption MeterIcon8 ImageAlpha ""][!SetOption MeterIcon8 Greyscale ""][!SetOption MeterText8 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete8 Hidden "1"][!UpdateMeter "MeterIcon8"][!UpdateMeter "MeterText8"][!UpdateMeter "MeterDelete8"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(8)"]
+MouseLeaveAction=[!SetOption MeterIcon8 ImageAlpha ""][!SetOption MeterIcon8 Greyscale ""][!SetOption MeterText8 FontColor ""][!SetOption MeterDelete8 Hidden "1"][!UpdateMeter "MeterIcon8"][!UpdateMeter "MeterText8"][!UpdateMeter "MeterDelete8"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(8)"]
 LeftMouseUpAction=["[MeasurePath8]"]
 DynamicVariables=1
 
@@ -600,13 +611,14 @@ DynamicVariables=1
 
 [MeterText9]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName9
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -614,7 +626,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon9 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon9 Greyscale "0"][!SetOption MeterText9 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete9 Hidden "0"][!UpdateMeter "MeterIcon9"][!UpdateMeter "MeterText9"][!UpdateMeter "MeterDelete9"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(9, 'MeasureName9')"]
-MouseLeaveAction=[!SetOption MeterIcon9 ImageAlpha ""][!SetOption MeterIcon9 Greyscale ""][!SetOption MeterText9 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete9 Hidden "1"][!UpdateMeter "MeterIcon9"][!UpdateMeter "MeterText9"][!UpdateMeter "MeterDelete9"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(9)"]
+MouseLeaveAction=[!SetOption MeterIcon9 ImageAlpha ""][!SetOption MeterIcon9 Greyscale ""][!SetOption MeterText9 FontColor ""][!SetOption MeterDelete9 Hidden "1"][!UpdateMeter "MeterIcon9"][!UpdateMeter "MeterText9"][!UpdateMeter "MeterDelete9"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(9)"]
 LeftMouseUpAction=["[MeasurePath9]"]
 DynamicVariables=1
 
@@ -670,13 +682,14 @@ DynamicVariables=1
 
 [MeterText10]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName10
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -684,7 +697,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon10 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon10 Greyscale "0"][!SetOption MeterText10 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete10 Hidden "0"][!UpdateMeter "MeterIcon10"][!UpdateMeter "MeterText10"][!UpdateMeter "MeterDelete10"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(10, 'MeasureName10')"]
-MouseLeaveAction=[!SetOption MeterIcon10 ImageAlpha ""][!SetOption MeterIcon10 Greyscale ""][!SetOption MeterText10 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete10 Hidden "1"][!UpdateMeter "MeterIcon10"][!UpdateMeter "MeterText10"][!UpdateMeter "MeterDelete10"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(10)"]
+MouseLeaveAction=[!SetOption MeterIcon10 ImageAlpha ""][!SetOption MeterIcon10 Greyscale ""][!SetOption MeterText10 FontColor ""][!SetOption MeterDelete10 Hidden "1"][!UpdateMeter "MeterIcon10"][!UpdateMeter "MeterText10"][!UpdateMeter "MeterDelete10"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(10)"]
 LeftMouseUpAction=["[MeasurePath10]"]
 DynamicVariables=1
 
@@ -740,13 +753,14 @@ DynamicVariables=1
 
 [MeterText11]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName11
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -754,7 +768,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon11 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon11 Greyscale "0"][!SetOption MeterText11 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete11 Hidden "0"][!UpdateMeter "MeterIcon11"][!UpdateMeter "MeterText11"][!UpdateMeter "MeterDelete11"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(11, 'MeasureName11')"]
-MouseLeaveAction=[!SetOption MeterIcon11 ImageAlpha ""][!SetOption MeterIcon11 Greyscale ""][!SetOption MeterText11 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete11 Hidden "1"][!UpdateMeter "MeterIcon11"][!UpdateMeter "MeterText11"][!UpdateMeter "MeterDelete11"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(11)"]
+MouseLeaveAction=[!SetOption MeterIcon11 ImageAlpha ""][!SetOption MeterIcon11 Greyscale ""][!SetOption MeterText11 FontColor ""][!SetOption MeterDelete11 Hidden "1"][!UpdateMeter "MeterIcon11"][!UpdateMeter "MeterText11"][!UpdateMeter "MeterDelete11"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(11)"]
 LeftMouseUpAction=["[MeasurePath11]"]
 DynamicVariables=1
 
@@ -810,13 +824,14 @@ DynamicVariables=1
 
 [MeterText12]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName12
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -824,7 +839,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon12 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon12 Greyscale "0"][!SetOption MeterText12 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete12 Hidden "0"][!UpdateMeter "MeterIcon12"][!UpdateMeter "MeterText12"][!UpdateMeter "MeterDelete12"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(12, 'MeasureName12')"]
-MouseLeaveAction=[!SetOption MeterIcon12 ImageAlpha ""][!SetOption MeterIcon12 Greyscale ""][!SetOption MeterText12 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete12 Hidden "1"][!UpdateMeter "MeterIcon12"][!UpdateMeter "MeterText12"][!UpdateMeter "MeterDelete12"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(12)"]
+MouseLeaveAction=[!SetOption MeterIcon12 ImageAlpha ""][!SetOption MeterIcon12 Greyscale ""][!SetOption MeterText12 FontColor ""][!SetOption MeterDelete12 Hidden "1"][!UpdateMeter "MeterIcon12"][!UpdateMeter "MeterText12"][!UpdateMeter "MeterDelete12"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(12)"]
 LeftMouseUpAction=["[MeasurePath12]"]
 DynamicVariables=1
 
@@ -880,13 +895,14 @@ DynamicVariables=1
 
 [MeterText13]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName13
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -894,7 +910,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon13 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon13 Greyscale "0"][!SetOption MeterText13 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete13 Hidden "0"][!UpdateMeter "MeterIcon13"][!UpdateMeter "MeterText13"][!UpdateMeter "MeterDelete13"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(13, 'MeasureName13')"]
-MouseLeaveAction=[!SetOption MeterIcon13 ImageAlpha ""][!SetOption MeterIcon13 Greyscale ""][!SetOption MeterText13 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete13 Hidden "1"][!UpdateMeter "MeterIcon13"][!UpdateMeter "MeterText13"][!UpdateMeter "MeterDelete13"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(13)"]
+MouseLeaveAction=[!SetOption MeterIcon13 ImageAlpha ""][!SetOption MeterIcon13 Greyscale ""][!SetOption MeterText13 FontColor ""][!SetOption MeterDelete13 Hidden "1"][!UpdateMeter "MeterIcon13"][!UpdateMeter "MeterText13"][!UpdateMeter "MeterDelete13"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(13)"]
 LeftMouseUpAction=["[MeasurePath13]"]
 DynamicVariables=1
 
@@ -950,13 +966,14 @@ DynamicVariables=1
 
 [MeterText14]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName14
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -964,7 +981,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon14 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon14 Greyscale "0"][!SetOption MeterText14 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete14 Hidden "0"][!UpdateMeter "MeterIcon14"][!UpdateMeter "MeterText14"][!UpdateMeter "MeterDelete14"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(14, 'MeasureName14')"]
-MouseLeaveAction=[!SetOption MeterIcon14 ImageAlpha ""][!SetOption MeterIcon14 Greyscale ""][!SetOption MeterText14 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete14 Hidden "1"][!UpdateMeter "MeterIcon14"][!UpdateMeter "MeterText14"][!UpdateMeter "MeterDelete14"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(14)"]
+MouseLeaveAction=[!SetOption MeterIcon14 ImageAlpha ""][!SetOption MeterIcon14 Greyscale ""][!SetOption MeterText14 FontColor ""][!SetOption MeterDelete14 Hidden "1"][!UpdateMeter "MeterIcon14"][!UpdateMeter "MeterText14"][!UpdateMeter "MeterDelete14"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(14)"]
 LeftMouseUpAction=["[MeasurePath14]"]
 DynamicVariables=1
 
@@ -1020,13 +1037,14 @@ DynamicVariables=1
 
 [MeterText15]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName15
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -1034,7 +1052,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon15 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon15 Greyscale "0"][!SetOption MeterText15 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete15 Hidden "0"][!UpdateMeter "MeterIcon15"][!UpdateMeter "MeterText15"][!UpdateMeter "MeterDelete15"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(15, 'MeasureName15')"]
-MouseLeaveAction=[!SetOption MeterIcon15 ImageAlpha ""][!SetOption MeterIcon15 Greyscale ""][!SetOption MeterText15 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete15 Hidden "1"][!UpdateMeter "MeterIcon15"][!UpdateMeter "MeterText15"][!UpdateMeter "MeterDelete15"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(15)"]
+MouseLeaveAction=[!SetOption MeterIcon15 ImageAlpha ""][!SetOption MeterIcon15 Greyscale ""][!SetOption MeterText15 FontColor ""][!SetOption MeterDelete15 Hidden "1"][!UpdateMeter "MeterIcon15"][!UpdateMeter "MeterText15"][!UpdateMeter "MeterDelete15"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(15)"]
 LeftMouseUpAction=["[MeasurePath15]"]
 DynamicVariables=1
 
@@ -1090,13 +1108,14 @@ DynamicVariables=1
 
 [MeterText16]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName16
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -1104,7 +1123,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon16 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon16 Greyscale "0"][!SetOption MeterText16 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete16 Hidden "0"][!UpdateMeter "MeterIcon16"][!UpdateMeter "MeterText16"][!UpdateMeter "MeterDelete16"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(16, 'MeasureName16')"]
-MouseLeaveAction=[!SetOption MeterIcon16 ImageAlpha ""][!SetOption MeterIcon16 Greyscale ""][!SetOption MeterText16 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete16 Hidden "1"][!UpdateMeter "MeterIcon16"][!UpdateMeter "MeterText16"][!UpdateMeter "MeterDelete16"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(16)"]
+MouseLeaveAction=[!SetOption MeterIcon16 ImageAlpha ""][!SetOption MeterIcon16 Greyscale ""][!SetOption MeterText16 FontColor ""][!SetOption MeterDelete16 Hidden "1"][!UpdateMeter "MeterIcon16"][!UpdateMeter "MeterText16"][!UpdateMeter "MeterDelete16"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(16)"]
 LeftMouseUpAction=["[MeasurePath16]"]
 DynamicVariables=1
 
@@ -1160,13 +1179,14 @@ DynamicVariables=1
 
 [MeterText17]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName17
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -1174,7 +1194,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon17 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon17 Greyscale "0"][!SetOption MeterText17 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete17 Hidden "0"][!UpdateMeter "MeterIcon17"][!UpdateMeter "MeterText17"][!UpdateMeter "MeterDelete17"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(17, 'MeasureName17')"]
-MouseLeaveAction=[!SetOption MeterIcon17 ImageAlpha ""][!SetOption MeterIcon17 Greyscale ""][!SetOption MeterText17 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete17 Hidden "1"][!UpdateMeter "MeterIcon17"][!UpdateMeter "MeterText17"][!UpdateMeter "MeterDelete17"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(17)"]
+MouseLeaveAction=[!SetOption MeterIcon17 ImageAlpha ""][!SetOption MeterIcon17 Greyscale ""][!SetOption MeterText17 FontColor ""][!SetOption MeterDelete17 Hidden "1"][!UpdateMeter "MeterIcon17"][!UpdateMeter "MeterText17"][!UpdateMeter "MeterDelete17"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(17)"]
 LeftMouseUpAction=["[MeasurePath17]"]
 DynamicVariables=1
 
@@ -1230,13 +1250,14 @@ DynamicVariables=1
 
 [MeterText18]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName18
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -1244,7 +1265,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon18 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon18 Greyscale "0"][!SetOption MeterText18 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete18 Hidden "0"][!UpdateMeter "MeterIcon18"][!UpdateMeter "MeterText18"][!UpdateMeter "MeterDelete18"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(18, 'MeasureName18')"]
-MouseLeaveAction=[!SetOption MeterIcon18 ImageAlpha ""][!SetOption MeterIcon18 Greyscale ""][!SetOption MeterText18 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete18 Hidden "1"][!UpdateMeter "MeterIcon18"][!UpdateMeter "MeterText18"][!UpdateMeter "MeterDelete18"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(18)"]
+MouseLeaveAction=[!SetOption MeterIcon18 ImageAlpha ""][!SetOption MeterIcon18 Greyscale ""][!SetOption MeterText18 FontColor ""][!SetOption MeterDelete18 Hidden "1"][!UpdateMeter "MeterIcon18"][!UpdateMeter "MeterText18"][!UpdateMeter "MeterDelete18"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(18)"]
 LeftMouseUpAction=["[MeasurePath18]"]
 DynamicVariables=1
 
@@ -1300,13 +1321,14 @@ DynamicVariables=1
 
 [MeterText19]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName19
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -1314,7 +1336,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon19 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon19 Greyscale "0"][!SetOption MeterText19 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete19 Hidden "0"][!UpdateMeter "MeterIcon19"][!UpdateMeter "MeterText19"][!UpdateMeter "MeterDelete19"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(19, 'MeasureName19')"]
-MouseLeaveAction=[!SetOption MeterIcon19 ImageAlpha ""][!SetOption MeterIcon19 Greyscale ""][!SetOption MeterText19 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete19 Hidden "1"][!UpdateMeter "MeterIcon19"][!UpdateMeter "MeterText19"][!UpdateMeter "MeterDelete19"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(19)"]
+MouseLeaveAction=[!SetOption MeterIcon19 ImageAlpha ""][!SetOption MeterIcon19 Greyscale ""][!SetOption MeterText19 FontColor ""][!SetOption MeterDelete19 Hidden "1"][!UpdateMeter "MeterIcon19"][!UpdateMeter "MeterText19"][!UpdateMeter "MeterDelete19"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(19)"]
 LeftMouseUpAction=["[MeasurePath19]"]
 DynamicVariables=1
 
@@ -1370,13 +1392,14 @@ DynamicVariables=1
 
 [MeterText20]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName20
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -1384,7 +1407,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon20 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon20 Greyscale "0"][!SetOption MeterText20 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete20 Hidden "0"][!UpdateMeter "MeterIcon20"][!UpdateMeter "MeterText20"][!UpdateMeter "MeterDelete20"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(20, 'MeasureName20')"]
-MouseLeaveAction=[!SetOption MeterIcon20 ImageAlpha ""][!SetOption MeterIcon20 Greyscale ""][!SetOption MeterText20 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete20 Hidden "1"][!UpdateMeter "MeterIcon20"][!UpdateMeter "MeterText20"][!UpdateMeter "MeterDelete20"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(20)"]
+MouseLeaveAction=[!SetOption MeterIcon20 ImageAlpha ""][!SetOption MeterIcon20 Greyscale ""][!SetOption MeterText20 FontColor ""][!SetOption MeterDelete20 Hidden "1"][!UpdateMeter "MeterIcon20"][!UpdateMeter "MeterText20"][!UpdateMeter "MeterDelete20"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(20)"]
 LeftMouseUpAction=["[MeasurePath20]"]
 DynamicVariables=1
 
@@ -1440,13 +1463,14 @@ DynamicVariables=1
 
 [MeterText21]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName21
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -1454,7 +1478,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon21 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon21 Greyscale "0"][!SetOption MeterText21 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete21 Hidden "0"][!UpdateMeter "MeterIcon21"][!UpdateMeter "MeterText21"][!UpdateMeter "MeterDelete21"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(21, 'MeasureName21')"]
-MouseLeaveAction=[!SetOption MeterIcon21 ImageAlpha ""][!SetOption MeterIcon21 Greyscale ""][!SetOption MeterText21 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete21 Hidden "1"][!UpdateMeter "MeterIcon21"][!UpdateMeter "MeterText21"][!UpdateMeter "MeterDelete21"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(21)"]
+MouseLeaveAction=[!SetOption MeterIcon21 ImageAlpha ""][!SetOption MeterIcon21 Greyscale ""][!SetOption MeterText21 FontColor ""][!SetOption MeterDelete21 Hidden "1"][!UpdateMeter "MeterIcon21"][!UpdateMeter "MeterText21"][!UpdateMeter "MeterDelete21"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(21)"]
 LeftMouseUpAction=["[MeasurePath21]"]
 DynamicVariables=1
 
@@ -1510,13 +1534,14 @@ DynamicVariables=1
 
 [MeterText22]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName22
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -1524,7 +1549,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon22 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon22 Greyscale "0"][!SetOption MeterText22 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete22 Hidden "0"][!UpdateMeter "MeterIcon22"][!UpdateMeter "MeterText22"][!UpdateMeter "MeterDelete22"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(22, 'MeasureName22')"]
-MouseLeaveAction=[!SetOption MeterIcon22 ImageAlpha ""][!SetOption MeterIcon22 Greyscale ""][!SetOption MeterText22 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete22 Hidden "1"][!UpdateMeter "MeterIcon22"][!UpdateMeter "MeterText22"][!UpdateMeter "MeterDelete22"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(22)"]
+MouseLeaveAction=[!SetOption MeterIcon22 ImageAlpha ""][!SetOption MeterIcon22 Greyscale ""][!SetOption MeterText22 FontColor ""][!SetOption MeterDelete22 Hidden "1"][!UpdateMeter "MeterIcon22"][!UpdateMeter "MeterText22"][!UpdateMeter "MeterDelete22"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(22)"]
 LeftMouseUpAction=["[MeasurePath22]"]
 DynamicVariables=1
 
@@ -1580,13 +1605,14 @@ DynamicVariables=1
 
 [MeterText23]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName23
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -1594,7 +1620,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon23 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon23 Greyscale "0"][!SetOption MeterText23 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete23 Hidden "0"][!UpdateMeter "MeterIcon23"][!UpdateMeter "MeterText23"][!UpdateMeter "MeterDelete23"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(23, 'MeasureName23')"]
-MouseLeaveAction=[!SetOption MeterIcon23 ImageAlpha ""][!SetOption MeterIcon23 Greyscale ""][!SetOption MeterText23 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete23 Hidden "1"][!UpdateMeter "MeterIcon23"][!UpdateMeter "MeterText23"][!UpdateMeter "MeterDelete23"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(23)"]
+MouseLeaveAction=[!SetOption MeterIcon23 ImageAlpha ""][!SetOption MeterIcon23 Greyscale ""][!SetOption MeterText23 FontColor ""][!SetOption MeterDelete23 Hidden "1"][!UpdateMeter "MeterIcon23"][!UpdateMeter "MeterText23"][!UpdateMeter "MeterDelete23"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(23)"]
 LeftMouseUpAction=["[MeasurePath23]"]
 DynamicVariables=1
 
@@ -1650,13 +1676,14 @@ DynamicVariables=1
 
 [MeterText24]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName24
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -1664,7 +1691,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon24 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon24 Greyscale "0"][!SetOption MeterText24 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete24 Hidden "0"][!UpdateMeter "MeterIcon24"][!UpdateMeter "MeterText24"][!UpdateMeter "MeterDelete24"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(24, 'MeasureName24')"]
-MouseLeaveAction=[!SetOption MeterIcon24 ImageAlpha ""][!SetOption MeterIcon24 Greyscale ""][!SetOption MeterText24 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete24 Hidden "1"][!UpdateMeter "MeterIcon24"][!UpdateMeter "MeterText24"][!UpdateMeter "MeterDelete24"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(24)"]
+MouseLeaveAction=[!SetOption MeterIcon24 ImageAlpha ""][!SetOption MeterIcon24 Greyscale ""][!SetOption MeterText24 FontColor ""][!SetOption MeterDelete24 Hidden "1"][!UpdateMeter "MeterIcon24"][!UpdateMeter "MeterText24"][!UpdateMeter "MeterDelete24"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(24)"]
 LeftMouseUpAction=["[MeasurePath24]"]
 DynamicVariables=1
 
@@ -1720,13 +1747,14 @@ DynamicVariables=1
 
 [MeterText25]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName25
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -1734,7 +1762,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon25 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon25 Greyscale "0"][!SetOption MeterText25 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete25 Hidden "0"][!UpdateMeter "MeterIcon25"][!UpdateMeter "MeterText25"][!UpdateMeter "MeterDelete25"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(25, 'MeasureName25')"]
-MouseLeaveAction=[!SetOption MeterIcon25 ImageAlpha ""][!SetOption MeterIcon25 Greyscale ""][!SetOption MeterText25 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete25 Hidden "1"][!UpdateMeter "MeterIcon25"][!UpdateMeter "MeterText25"][!UpdateMeter "MeterDelete25"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(25)"]
+MouseLeaveAction=[!SetOption MeterIcon25 ImageAlpha ""][!SetOption MeterIcon25 Greyscale ""][!SetOption MeterText25 FontColor ""][!SetOption MeterDelete25 Hidden "1"][!UpdateMeter "MeterIcon25"][!UpdateMeter "MeterText25"][!UpdateMeter "MeterDelete25"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(25)"]
 LeftMouseUpAction=["[MeasurePath25]"]
 DynamicVariables=1
 
@@ -1790,13 +1818,14 @@ DynamicVariables=1
 
 [MeterText26]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName26
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -1804,7 +1833,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon26 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon26 Greyscale "0"][!SetOption MeterText26 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete26 Hidden "0"][!UpdateMeter "MeterIcon26"][!UpdateMeter "MeterText26"][!UpdateMeter "MeterDelete26"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(26, 'MeasureName26')"]
-MouseLeaveAction=[!SetOption MeterIcon26 ImageAlpha ""][!SetOption MeterIcon26 Greyscale ""][!SetOption MeterText26 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete26 Hidden "1"][!UpdateMeter "MeterIcon26"][!UpdateMeter "MeterText26"][!UpdateMeter "MeterDelete26"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(26)"]
+MouseLeaveAction=[!SetOption MeterIcon26 ImageAlpha ""][!SetOption MeterIcon26 Greyscale ""][!SetOption MeterText26 FontColor ""][!SetOption MeterDelete26 Hidden "1"][!UpdateMeter "MeterIcon26"][!UpdateMeter "MeterText26"][!UpdateMeter "MeterDelete26"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(26)"]
 LeftMouseUpAction=["[MeasurePath26]"]
 DynamicVariables=1
 
@@ -1860,13 +1889,14 @@ DynamicVariables=1
 
 [MeterText27]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName27
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -1874,7 +1904,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon27 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon27 Greyscale "0"][!SetOption MeterText27 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete27 Hidden "0"][!UpdateMeter "MeterIcon27"][!UpdateMeter "MeterText27"][!UpdateMeter "MeterDelete27"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(27, 'MeasureName27')"]
-MouseLeaveAction=[!SetOption MeterIcon27 ImageAlpha ""][!SetOption MeterIcon27 Greyscale ""][!SetOption MeterText27 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete27 Hidden "1"][!UpdateMeter "MeterIcon27"][!UpdateMeter "MeterText27"][!UpdateMeter "MeterDelete27"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(27)"]
+MouseLeaveAction=[!SetOption MeterIcon27 ImageAlpha ""][!SetOption MeterIcon27 Greyscale ""][!SetOption MeterText27 FontColor ""][!SetOption MeterDelete27 Hidden "1"][!UpdateMeter "MeterIcon27"][!UpdateMeter "MeterText27"][!UpdateMeter "MeterDelete27"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(27)"]
 LeftMouseUpAction=["[MeasurePath27]"]
 DynamicVariables=1
 
@@ -1930,13 +1960,14 @@ DynamicVariables=1
 
 [MeterText28]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName28
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -1944,7 +1975,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon28 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon28 Greyscale "0"][!SetOption MeterText28 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete28 Hidden "0"][!UpdateMeter "MeterIcon28"][!UpdateMeter "MeterText28"][!UpdateMeter "MeterDelete28"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(28, 'MeasureName28')"]
-MouseLeaveAction=[!SetOption MeterIcon28 ImageAlpha ""][!SetOption MeterIcon28 Greyscale ""][!SetOption MeterText28 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete28 Hidden "1"][!UpdateMeter "MeterIcon28"][!UpdateMeter "MeterText28"][!UpdateMeter "MeterDelete28"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(28)"]
+MouseLeaveAction=[!SetOption MeterIcon28 ImageAlpha ""][!SetOption MeterIcon28 Greyscale ""][!SetOption MeterText28 FontColor ""][!SetOption MeterDelete28 Hidden "1"][!UpdateMeter "MeterIcon28"][!UpdateMeter "MeterText28"][!UpdateMeter "MeterDelete28"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(28)"]
 LeftMouseUpAction=["[MeasurePath28]"]
 DynamicVariables=1
 
@@ -2000,13 +2031,14 @@ DynamicVariables=1
 
 [MeterText29]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName29
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -2014,7 +2046,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon29 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon29 Greyscale "0"][!SetOption MeterText29 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete29 Hidden "0"][!UpdateMeter "MeterIcon29"][!UpdateMeter "MeterText29"][!UpdateMeter "MeterDelete29"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(29, 'MeasureName29')"]
-MouseLeaveAction=[!SetOption MeterIcon29 ImageAlpha ""][!SetOption MeterIcon29 Greyscale ""][!SetOption MeterText29 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete29 Hidden "1"][!UpdateMeter "MeterIcon29"][!UpdateMeter "MeterText29"][!UpdateMeter "MeterDelete29"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(29)"]
+MouseLeaveAction=[!SetOption MeterIcon29 ImageAlpha ""][!SetOption MeterIcon29 Greyscale ""][!SetOption MeterText29 FontColor ""][!SetOption MeterDelete29 Hidden "1"][!UpdateMeter "MeterIcon29"][!UpdateMeter "MeterText29"][!UpdateMeter "MeterDelete29"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(29)"]
 LeftMouseUpAction=["[MeasurePath29]"]
 DynamicVariables=1
 
@@ -2070,13 +2102,14 @@ DynamicVariables=1
 
 [MeterText30]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName30
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -2084,7 +2117,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon30 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon30 Greyscale "0"][!SetOption MeterText30 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete30 Hidden "0"][!UpdateMeter "MeterIcon30"][!UpdateMeter "MeterText30"][!UpdateMeter "MeterDelete30"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(30, 'MeasureName30')"]
-MouseLeaveAction=[!SetOption MeterIcon30 ImageAlpha ""][!SetOption MeterIcon30 Greyscale ""][!SetOption MeterText30 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete30 Hidden "1"][!UpdateMeter "MeterIcon30"][!UpdateMeter "MeterText30"][!UpdateMeter "MeterDelete30"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(30)"]
+MouseLeaveAction=[!SetOption MeterIcon30 ImageAlpha ""][!SetOption MeterIcon30 Greyscale ""][!SetOption MeterText30 FontColor ""][!SetOption MeterDelete30 Hidden "1"][!UpdateMeter "MeterIcon30"][!UpdateMeter "MeterText30"][!UpdateMeter "MeterDelete30"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(30)"]
 LeftMouseUpAction=["[MeasurePath30]"]
 DynamicVariables=1
 
@@ -2140,13 +2173,14 @@ DynamicVariables=1
 
 [MeterText31]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName31
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -2154,7 +2188,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon31 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon31 Greyscale "0"][!SetOption MeterText31 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete31 Hidden "0"][!UpdateMeter "MeterIcon31"][!UpdateMeter "MeterText31"][!UpdateMeter "MeterDelete31"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(31, 'MeasureName31')"]
-MouseLeaveAction=[!SetOption MeterIcon31 ImageAlpha ""][!SetOption MeterIcon31 Greyscale ""][!SetOption MeterText31 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete31 Hidden "1"][!UpdateMeter "MeterIcon31"][!UpdateMeter "MeterText31"][!UpdateMeter "MeterDelete31"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(31)"]
+MouseLeaveAction=[!SetOption MeterIcon31 ImageAlpha ""][!SetOption MeterIcon31 Greyscale ""][!SetOption MeterText31 FontColor ""][!SetOption MeterDelete31 Hidden "1"][!UpdateMeter "MeterIcon31"][!UpdateMeter "MeterText31"][!UpdateMeter "MeterDelete31"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(31)"]
 LeftMouseUpAction=["[MeasurePath31]"]
 DynamicVariables=1
 
@@ -2210,13 +2244,14 @@ DynamicVariables=1
 
 [MeterText32]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName32
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -2224,7 +2259,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon32 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon32 Greyscale "0"][!SetOption MeterText32 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete32 Hidden "0"][!UpdateMeter "MeterIcon32"][!UpdateMeter "MeterText32"][!UpdateMeter "MeterDelete32"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(32, 'MeasureName32')"]
-MouseLeaveAction=[!SetOption MeterIcon32 ImageAlpha ""][!SetOption MeterIcon32 Greyscale ""][!SetOption MeterText32 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete32 Hidden "1"][!UpdateMeter "MeterIcon32"][!UpdateMeter "MeterText32"][!UpdateMeter "MeterDelete32"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(32)"]
+MouseLeaveAction=[!SetOption MeterIcon32 ImageAlpha ""][!SetOption MeterIcon32 Greyscale ""][!SetOption MeterText32 FontColor ""][!SetOption MeterDelete32 Hidden "1"][!UpdateMeter "MeterIcon32"][!UpdateMeter "MeterText32"][!UpdateMeter "MeterDelete32"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(32)"]
 LeftMouseUpAction=["[MeasurePath32]"]
 DynamicVariables=1
 
@@ -2280,13 +2315,14 @@ DynamicVariables=1
 
 [MeterText33]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName33
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -2294,7 +2330,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon33 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon33 Greyscale "0"][!SetOption MeterText33 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete33 Hidden "0"][!UpdateMeter "MeterIcon33"][!UpdateMeter "MeterText33"][!UpdateMeter "MeterDelete33"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(33, 'MeasureName33')"]
-MouseLeaveAction=[!SetOption MeterIcon33 ImageAlpha ""][!SetOption MeterIcon33 Greyscale ""][!SetOption MeterText33 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete33 Hidden "1"][!UpdateMeter "MeterIcon33"][!UpdateMeter "MeterText33"][!UpdateMeter "MeterDelete33"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(33)"]
+MouseLeaveAction=[!SetOption MeterIcon33 ImageAlpha ""][!SetOption MeterIcon33 Greyscale ""][!SetOption MeterText33 FontColor ""][!SetOption MeterDelete33 Hidden "1"][!UpdateMeter "MeterIcon33"][!UpdateMeter "MeterText33"][!UpdateMeter "MeterDelete33"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(33)"]
 LeftMouseUpAction=["[MeasurePath33]"]
 DynamicVariables=1
 
@@ -2350,13 +2386,14 @@ DynamicVariables=1
 
 [MeterText34]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName34
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -2364,7 +2401,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon34 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon34 Greyscale "0"][!SetOption MeterText34 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete34 Hidden "0"][!UpdateMeter "MeterIcon34"][!UpdateMeter "MeterText34"][!UpdateMeter "MeterDelete34"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(34, 'MeasureName34')"]
-MouseLeaveAction=[!SetOption MeterIcon34 ImageAlpha ""][!SetOption MeterIcon34 Greyscale ""][!SetOption MeterText34 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete34 Hidden "1"][!UpdateMeter "MeterIcon34"][!UpdateMeter "MeterText34"][!UpdateMeter "MeterDelete34"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(34)"]
+MouseLeaveAction=[!SetOption MeterIcon34 ImageAlpha ""][!SetOption MeterIcon34 Greyscale ""][!SetOption MeterText34 FontColor ""][!SetOption MeterDelete34 Hidden "1"][!UpdateMeter "MeterIcon34"][!UpdateMeter "MeterText34"][!UpdateMeter "MeterDelete34"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(34)"]
 LeftMouseUpAction=["[MeasurePath34]"]
 DynamicVariables=1
 
@@ -2420,13 +2457,14 @@ DynamicVariables=1
 
 [MeterText35]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName35
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -2434,7 +2472,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon35 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon35 Greyscale "0"][!SetOption MeterText35 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete35 Hidden "0"][!UpdateMeter "MeterIcon35"][!UpdateMeter "MeterText35"][!UpdateMeter "MeterDelete35"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(35, 'MeasureName35')"]
-MouseLeaveAction=[!SetOption MeterIcon35 ImageAlpha ""][!SetOption MeterIcon35 Greyscale ""][!SetOption MeterText35 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete35 Hidden "1"][!UpdateMeter "MeterIcon35"][!UpdateMeter "MeterText35"][!UpdateMeter "MeterDelete35"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(35)"]
+MouseLeaveAction=[!SetOption MeterIcon35 ImageAlpha ""][!SetOption MeterIcon35 Greyscale ""][!SetOption MeterText35 FontColor ""][!SetOption MeterDelete35 Hidden "1"][!UpdateMeter "MeterIcon35"][!UpdateMeter "MeterText35"][!UpdateMeter "MeterDelete35"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(35)"]
 LeftMouseUpAction=["[MeasurePath35]"]
 DynamicVariables=1
 
@@ -2490,13 +2528,14 @@ DynamicVariables=1
 
 [MeterText36]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName36
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -2504,7 +2543,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon36 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon36 Greyscale "0"][!SetOption MeterText36 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete36 Hidden "0"][!UpdateMeter "MeterIcon36"][!UpdateMeter "MeterText36"][!UpdateMeter "MeterDelete36"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(36, 'MeasureName36')"]
-MouseLeaveAction=[!SetOption MeterIcon36 ImageAlpha ""][!SetOption MeterIcon36 Greyscale ""][!SetOption MeterText36 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete36 Hidden "1"][!UpdateMeter "MeterIcon36"][!UpdateMeter "MeterText36"][!UpdateMeter "MeterDelete36"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(36)"]
+MouseLeaveAction=[!SetOption MeterIcon36 ImageAlpha ""][!SetOption MeterIcon36 Greyscale ""][!SetOption MeterText36 FontColor ""][!SetOption MeterDelete36 Hidden "1"][!UpdateMeter "MeterIcon36"][!UpdateMeter "MeterText36"][!UpdateMeter "MeterDelete36"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(36)"]
 LeftMouseUpAction=["[MeasurePath36]"]
 DynamicVariables=1
 
@@ -2560,13 +2599,14 @@ DynamicVariables=1
 
 [MeterText37]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName37
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -2574,7 +2614,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon37 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon37 Greyscale "0"][!SetOption MeterText37 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete37 Hidden "0"][!UpdateMeter "MeterIcon37"][!UpdateMeter "MeterText37"][!UpdateMeter "MeterDelete37"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(37, 'MeasureName37')"]
-MouseLeaveAction=[!SetOption MeterIcon37 ImageAlpha ""][!SetOption MeterIcon37 Greyscale ""][!SetOption MeterText37 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete37 Hidden "1"][!UpdateMeter "MeterIcon37"][!UpdateMeter "MeterText37"][!UpdateMeter "MeterDelete37"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(37)"]
+MouseLeaveAction=[!SetOption MeterIcon37 ImageAlpha ""][!SetOption MeterIcon37 Greyscale ""][!SetOption MeterText37 FontColor ""][!SetOption MeterDelete37 Hidden "1"][!UpdateMeter "MeterIcon37"][!UpdateMeter "MeterText37"][!UpdateMeter "MeterDelete37"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(37)"]
 LeftMouseUpAction=["[MeasurePath37]"]
 DynamicVariables=1
 
@@ -2630,13 +2670,14 @@ DynamicVariables=1
 
 [MeterText38]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName38
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -2644,7 +2685,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon38 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon38 Greyscale "0"][!SetOption MeterText38 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete38 Hidden "0"][!UpdateMeter "MeterIcon38"][!UpdateMeter "MeterText38"][!UpdateMeter "MeterDelete38"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(38, 'MeasureName38')"]
-MouseLeaveAction=[!SetOption MeterIcon38 ImageAlpha ""][!SetOption MeterIcon38 Greyscale ""][!SetOption MeterText38 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete38 Hidden "1"][!UpdateMeter "MeterIcon38"][!UpdateMeter "MeterText38"][!UpdateMeter "MeterDelete38"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(38)"]
+MouseLeaveAction=[!SetOption MeterIcon38 ImageAlpha ""][!SetOption MeterIcon38 Greyscale ""][!SetOption MeterText38 FontColor ""][!SetOption MeterDelete38 Hidden "1"][!UpdateMeter "MeterIcon38"][!UpdateMeter "MeterText38"][!UpdateMeter "MeterDelete38"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(38)"]
 LeftMouseUpAction=["[MeasurePath38]"]
 DynamicVariables=1
 
@@ -2700,13 +2741,14 @@ DynamicVariables=1
 
 [MeterText39]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName39
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -2714,7 +2756,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon39 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon39 Greyscale "0"][!SetOption MeterText39 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete39 Hidden "0"][!UpdateMeter "MeterIcon39"][!UpdateMeter "MeterText39"][!UpdateMeter "MeterDelete39"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(39, 'MeasureName39')"]
-MouseLeaveAction=[!SetOption MeterIcon39 ImageAlpha ""][!SetOption MeterIcon39 Greyscale ""][!SetOption MeterText39 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete39 Hidden "1"][!UpdateMeter "MeterIcon39"][!UpdateMeter "MeterText39"][!UpdateMeter "MeterDelete39"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(39)"]
+MouseLeaveAction=[!SetOption MeterIcon39 ImageAlpha ""][!SetOption MeterIcon39 Greyscale ""][!SetOption MeterText39 FontColor ""][!SetOption MeterDelete39 Hidden "1"][!UpdateMeter "MeterIcon39"][!UpdateMeter "MeterText39"][!UpdateMeter "MeterDelete39"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(39)"]
 LeftMouseUpAction=["[MeasurePath39]"]
 DynamicVariables=1
 
@@ -2770,13 +2812,14 @@ DynamicVariables=1
 
 [MeterText40]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName40
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -2784,7 +2827,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon40 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon40 Greyscale "0"][!SetOption MeterText40 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete40 Hidden "0"][!UpdateMeter "MeterIcon40"][!UpdateMeter "MeterText40"][!UpdateMeter "MeterDelete40"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(40, 'MeasureName40')"]
-MouseLeaveAction=[!SetOption MeterIcon40 ImageAlpha ""][!SetOption MeterIcon40 Greyscale ""][!SetOption MeterText40 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete40 Hidden "1"][!UpdateMeter "MeterIcon40"][!UpdateMeter "MeterText40"][!UpdateMeter "MeterDelete40"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(40)"]
+MouseLeaveAction=[!SetOption MeterIcon40 ImageAlpha ""][!SetOption MeterIcon40 Greyscale ""][!SetOption MeterText40 FontColor ""][!SetOption MeterDelete40 Hidden "1"][!UpdateMeter "MeterIcon40"][!UpdateMeter "MeterText40"][!UpdateMeter "MeterDelete40"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(40)"]
 LeftMouseUpAction=["[MeasurePath40]"]
 DynamicVariables=1
 
@@ -2840,13 +2883,14 @@ DynamicVariables=1
 
 [MeterText41]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName41
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -2854,7 +2898,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon41 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon41 Greyscale "0"][!SetOption MeterText41 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete41 Hidden "0"][!UpdateMeter "MeterIcon41"][!UpdateMeter "MeterText41"][!UpdateMeter "MeterDelete41"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(41, 'MeasureName41')"]
-MouseLeaveAction=[!SetOption MeterIcon41 ImageAlpha ""][!SetOption MeterIcon41 Greyscale ""][!SetOption MeterText41 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete41 Hidden "1"][!UpdateMeter "MeterIcon41"][!UpdateMeter "MeterText41"][!UpdateMeter "MeterDelete41"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(41)"]
+MouseLeaveAction=[!SetOption MeterIcon41 ImageAlpha ""][!SetOption MeterIcon41 Greyscale ""][!SetOption MeterText41 FontColor ""][!SetOption MeterDelete41 Hidden "1"][!UpdateMeter "MeterIcon41"][!UpdateMeter "MeterText41"][!UpdateMeter "MeterDelete41"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(41)"]
 LeftMouseUpAction=["[MeasurePath41]"]
 DynamicVariables=1
 
@@ -2910,13 +2954,14 @@ DynamicVariables=1
 
 [MeterText42]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName42
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -2924,7 +2969,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon42 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon42 Greyscale "0"][!SetOption MeterText42 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete42 Hidden "0"][!UpdateMeter "MeterIcon42"][!UpdateMeter "MeterText42"][!UpdateMeter "MeterDelete42"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(42, 'MeasureName42')"]
-MouseLeaveAction=[!SetOption MeterIcon42 ImageAlpha ""][!SetOption MeterIcon42 Greyscale ""][!SetOption MeterText42 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete42 Hidden "1"][!UpdateMeter "MeterIcon42"][!UpdateMeter "MeterText42"][!UpdateMeter "MeterDelete42"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(42)"]
+MouseLeaveAction=[!SetOption MeterIcon42 ImageAlpha ""][!SetOption MeterIcon42 Greyscale ""][!SetOption MeterText42 FontColor ""][!SetOption MeterDelete42 Hidden "1"][!UpdateMeter "MeterIcon42"][!UpdateMeter "MeterText42"][!UpdateMeter "MeterDelete42"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(42)"]
 LeftMouseUpAction=["[MeasurePath42]"]
 DynamicVariables=1
 
@@ -2980,13 +3025,14 @@ DynamicVariables=1
 
 [MeterText43]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName43
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -2994,7 +3040,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon43 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon43 Greyscale "0"][!SetOption MeterText43 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete43 Hidden "0"][!UpdateMeter "MeterIcon43"][!UpdateMeter "MeterText43"][!UpdateMeter "MeterDelete43"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(43, 'MeasureName43')"]
-MouseLeaveAction=[!SetOption MeterIcon43 ImageAlpha ""][!SetOption MeterIcon43 Greyscale ""][!SetOption MeterText43 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete43 Hidden "1"][!UpdateMeter "MeterIcon43"][!UpdateMeter "MeterText43"][!UpdateMeter "MeterDelete43"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(43)"]
+MouseLeaveAction=[!SetOption MeterIcon43 ImageAlpha ""][!SetOption MeterIcon43 Greyscale ""][!SetOption MeterText43 FontColor ""][!SetOption MeterDelete43 Hidden "1"][!UpdateMeter "MeterIcon43"][!UpdateMeter "MeterText43"][!UpdateMeter "MeterDelete43"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(43)"]
 LeftMouseUpAction=["[MeasurePath43]"]
 DynamicVariables=1
 
@@ -3050,13 +3096,14 @@ DynamicVariables=1
 
 [MeterText44]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName44
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -3064,7 +3111,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon44 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon44 Greyscale "0"][!SetOption MeterText44 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete44 Hidden "0"][!UpdateMeter "MeterIcon44"][!UpdateMeter "MeterText44"][!UpdateMeter "MeterDelete44"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(44, 'MeasureName44')"]
-MouseLeaveAction=[!SetOption MeterIcon44 ImageAlpha ""][!SetOption MeterIcon44 Greyscale ""][!SetOption MeterText44 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete44 Hidden "1"][!UpdateMeter "MeterIcon44"][!UpdateMeter "MeterText44"][!UpdateMeter "MeterDelete44"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(44)"]
+MouseLeaveAction=[!SetOption MeterIcon44 ImageAlpha ""][!SetOption MeterIcon44 Greyscale ""][!SetOption MeterText44 FontColor ""][!SetOption MeterDelete44 Hidden "1"][!UpdateMeter "MeterIcon44"][!UpdateMeter "MeterText44"][!UpdateMeter "MeterDelete44"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(44)"]
 LeftMouseUpAction=["[MeasurePath44]"]
 DynamicVariables=1
 
@@ -3120,13 +3167,14 @@ DynamicVariables=1
 
 [MeterText45]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName45
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -3134,7 +3182,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon45 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon45 Greyscale "0"][!SetOption MeterText45 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete45 Hidden "0"][!UpdateMeter "MeterIcon45"][!UpdateMeter "MeterText45"][!UpdateMeter "MeterDelete45"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(45, 'MeasureName45')"]
-MouseLeaveAction=[!SetOption MeterIcon45 ImageAlpha ""][!SetOption MeterIcon45 Greyscale ""][!SetOption MeterText45 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete45 Hidden "1"][!UpdateMeter "MeterIcon45"][!UpdateMeter "MeterText45"][!UpdateMeter "MeterDelete45"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(45)"]
+MouseLeaveAction=[!SetOption MeterIcon45 ImageAlpha ""][!SetOption MeterIcon45 Greyscale ""][!SetOption MeterText45 FontColor ""][!SetOption MeterDelete45 Hidden "1"][!UpdateMeter "MeterIcon45"][!UpdateMeter "MeterText45"][!UpdateMeter "MeterDelete45"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(45)"]
 LeftMouseUpAction=["[MeasurePath45]"]
 DynamicVariables=1
 
@@ -3190,13 +3238,14 @@ DynamicVariables=1
 
 [MeterText46]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName46
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -3204,7 +3253,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon46 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon46 Greyscale "0"][!SetOption MeterText46 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete46 Hidden "0"][!UpdateMeter "MeterIcon46"][!UpdateMeter "MeterText46"][!UpdateMeter "MeterDelete46"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(46, 'MeasureName46')"]
-MouseLeaveAction=[!SetOption MeterIcon46 ImageAlpha ""][!SetOption MeterIcon46 Greyscale ""][!SetOption MeterText46 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete46 Hidden "1"][!UpdateMeter "MeterIcon46"][!UpdateMeter "MeterText46"][!UpdateMeter "MeterDelete46"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(46)"]
+MouseLeaveAction=[!SetOption MeterIcon46 ImageAlpha ""][!SetOption MeterIcon46 Greyscale ""][!SetOption MeterText46 FontColor ""][!SetOption MeterDelete46 Hidden "1"][!UpdateMeter "MeterIcon46"][!UpdateMeter "MeterText46"][!UpdateMeter "MeterDelete46"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(46)"]
 LeftMouseUpAction=["[MeasurePath46]"]
 DynamicVariables=1
 
@@ -3260,13 +3309,14 @@ DynamicVariables=1
 
 [MeterText47]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName47
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -3274,7 +3324,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon47 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon47 Greyscale "0"][!SetOption MeterText47 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete47 Hidden "0"][!UpdateMeter "MeterIcon47"][!UpdateMeter "MeterText47"][!UpdateMeter "MeterDelete47"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(47, 'MeasureName47')"]
-MouseLeaveAction=[!SetOption MeterIcon47 ImageAlpha ""][!SetOption MeterIcon47 Greyscale ""][!SetOption MeterText47 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete47 Hidden "1"][!UpdateMeter "MeterIcon47"][!UpdateMeter "MeterText47"][!UpdateMeter "MeterDelete47"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(47)"]
+MouseLeaveAction=[!SetOption MeterIcon47 ImageAlpha ""][!SetOption MeterIcon47 Greyscale ""][!SetOption MeterText47 FontColor ""][!SetOption MeterDelete47 Hidden "1"][!UpdateMeter "MeterIcon47"][!UpdateMeter "MeterText47"][!UpdateMeter "MeterDelete47"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(47)"]
 LeftMouseUpAction=["[MeasurePath47]"]
 DynamicVariables=1
 
@@ -3330,13 +3380,14 @@ DynamicVariables=1
 
 [MeterText48]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName48
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -3344,7 +3395,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon48 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon48 Greyscale "0"][!SetOption MeterText48 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete48 Hidden "0"][!UpdateMeter "MeterIcon48"][!UpdateMeter "MeterText48"][!UpdateMeter "MeterDelete48"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(48, 'MeasureName48')"]
-MouseLeaveAction=[!SetOption MeterIcon48 ImageAlpha ""][!SetOption MeterIcon48 Greyscale ""][!SetOption MeterText48 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete48 Hidden "1"][!UpdateMeter "MeterIcon48"][!UpdateMeter "MeterText48"][!UpdateMeter "MeterDelete48"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(48)"]
+MouseLeaveAction=[!SetOption MeterIcon48 ImageAlpha ""][!SetOption MeterIcon48 Greyscale ""][!SetOption MeterText48 FontColor ""][!SetOption MeterDelete48 Hidden "1"][!UpdateMeter "MeterIcon48"][!UpdateMeter "MeterText48"][!UpdateMeter "MeterDelete48"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(48)"]
 LeftMouseUpAction=["[MeasurePath48]"]
 DynamicVariables=1
 
@@ -3400,13 +3451,14 @@ DynamicVariables=1
 
 [MeterText49]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName49
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -3414,7 +3466,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon49 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon49 Greyscale "0"][!SetOption MeterText49 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete49 Hidden "0"][!UpdateMeter "MeterIcon49"][!UpdateMeter "MeterText49"][!UpdateMeter "MeterDelete49"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(49, 'MeasureName49')"]
-MouseLeaveAction=[!SetOption MeterIcon49 ImageAlpha ""][!SetOption MeterIcon49 Greyscale ""][!SetOption MeterText49 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete49 Hidden "1"][!UpdateMeter "MeterIcon49"][!UpdateMeter "MeterText49"][!UpdateMeter "MeterDelete49"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(49)"]
+MouseLeaveAction=[!SetOption MeterIcon49 ImageAlpha ""][!SetOption MeterIcon49 Greyscale ""][!SetOption MeterText49 FontColor ""][!SetOption MeterDelete49 Hidden "1"][!UpdateMeter "MeterIcon49"][!UpdateMeter "MeterText49"][!UpdateMeter "MeterDelete49"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(49)"]
 LeftMouseUpAction=["[MeasurePath49]"]
 DynamicVariables=1
 
@@ -3470,13 +3522,14 @@ DynamicVariables=1
 
 [MeterText50]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName50
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -3484,7 +3537,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon50 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon50 Greyscale "0"][!SetOption MeterText50 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete50 Hidden "0"][!UpdateMeter "MeterIcon50"][!UpdateMeter "MeterText50"][!UpdateMeter "MeterDelete50"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(50, 'MeasureName50')"]
-MouseLeaveAction=[!SetOption MeterIcon50 ImageAlpha ""][!SetOption MeterIcon50 Greyscale ""][!SetOption MeterText50 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete50 Hidden "1"][!UpdateMeter "MeterIcon50"][!UpdateMeter "MeterText50"][!UpdateMeter "MeterDelete50"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(50)"]
+MouseLeaveAction=[!SetOption MeterIcon50 ImageAlpha ""][!SetOption MeterIcon50 Greyscale ""][!SetOption MeterText50 FontColor ""][!SetOption MeterDelete50 Hidden "1"][!UpdateMeter "MeterIcon50"][!UpdateMeter "MeterText50"][!UpdateMeter "MeterDelete50"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(50)"]
 LeftMouseUpAction=["[MeasurePath50]"]
 DynamicVariables=1
 
@@ -3540,13 +3593,14 @@ DynamicVariables=1
 
 [MeterText51]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName51
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -3554,7 +3608,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon51 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon51 Greyscale "0"][!SetOption MeterText51 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete51 Hidden "0"][!UpdateMeter "MeterIcon51"][!UpdateMeter "MeterText51"][!UpdateMeter "MeterDelete51"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(51, 'MeasureName51')"]
-MouseLeaveAction=[!SetOption MeterIcon51 ImageAlpha ""][!SetOption MeterIcon51 Greyscale ""][!SetOption MeterText51 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete51 Hidden "1"][!UpdateMeter "MeterIcon51"][!UpdateMeter "MeterText51"][!UpdateMeter "MeterDelete51"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(51)"]
+MouseLeaveAction=[!SetOption MeterIcon51 ImageAlpha ""][!SetOption MeterIcon51 Greyscale ""][!SetOption MeterText51 FontColor ""][!SetOption MeterDelete51 Hidden "1"][!UpdateMeter "MeterIcon51"][!UpdateMeter "MeterText51"][!UpdateMeter "MeterDelete51"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(51)"]
 LeftMouseUpAction=["[MeasurePath51]"]
 DynamicVariables=1
 
@@ -3610,13 +3664,14 @@ DynamicVariables=1
 
 [MeterText52]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName52
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -3624,7 +3679,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon52 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon52 Greyscale "0"][!SetOption MeterText52 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete52 Hidden "0"][!UpdateMeter "MeterIcon52"][!UpdateMeter "MeterText52"][!UpdateMeter "MeterDelete52"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(52, 'MeasureName52')"]
-MouseLeaveAction=[!SetOption MeterIcon52 ImageAlpha ""][!SetOption MeterIcon52 Greyscale ""][!SetOption MeterText52 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete52 Hidden "1"][!UpdateMeter "MeterIcon52"][!UpdateMeter "MeterText52"][!UpdateMeter "MeterDelete52"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(52)"]
+MouseLeaveAction=[!SetOption MeterIcon52 ImageAlpha ""][!SetOption MeterIcon52 Greyscale ""][!SetOption MeterText52 FontColor ""][!SetOption MeterDelete52 Hidden "1"][!UpdateMeter "MeterIcon52"][!UpdateMeter "MeterText52"][!UpdateMeter "MeterDelete52"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(52)"]
 LeftMouseUpAction=["[MeasurePath52]"]
 DynamicVariables=1
 
@@ -3680,13 +3735,14 @@ DynamicVariables=1
 
 [MeterText53]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName53
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -3694,7 +3750,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon53 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon53 Greyscale "0"][!SetOption MeterText53 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete53 Hidden "0"][!UpdateMeter "MeterIcon53"][!UpdateMeter "MeterText53"][!UpdateMeter "MeterDelete53"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(53, 'MeasureName53')"]
-MouseLeaveAction=[!SetOption MeterIcon53 ImageAlpha ""][!SetOption MeterIcon53 Greyscale ""][!SetOption MeterText53 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete53 Hidden "1"][!UpdateMeter "MeterIcon53"][!UpdateMeter "MeterText53"][!UpdateMeter "MeterDelete53"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(53)"]
+MouseLeaveAction=[!SetOption MeterIcon53 ImageAlpha ""][!SetOption MeterIcon53 Greyscale ""][!SetOption MeterText53 FontColor ""][!SetOption MeterDelete53 Hidden "1"][!UpdateMeter "MeterIcon53"][!UpdateMeter "MeterText53"][!UpdateMeter "MeterDelete53"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(53)"]
 LeftMouseUpAction=["[MeasurePath53]"]
 DynamicVariables=1
 
@@ -3750,13 +3806,14 @@ DynamicVariables=1
 
 [MeterText54]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName54
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -3764,7 +3821,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon54 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon54 Greyscale "0"][!SetOption MeterText54 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete54 Hidden "0"][!UpdateMeter "MeterIcon54"][!UpdateMeter "MeterText54"][!UpdateMeter "MeterDelete54"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(54, 'MeasureName54')"]
-MouseLeaveAction=[!SetOption MeterIcon54 ImageAlpha ""][!SetOption MeterIcon54 Greyscale ""][!SetOption MeterText54 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete54 Hidden "1"][!UpdateMeter "MeterIcon54"][!UpdateMeter "MeterText54"][!UpdateMeter "MeterDelete54"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(54)"]
+MouseLeaveAction=[!SetOption MeterIcon54 ImageAlpha ""][!SetOption MeterIcon54 Greyscale ""][!SetOption MeterText54 FontColor ""][!SetOption MeterDelete54 Hidden "1"][!UpdateMeter "MeterIcon54"][!UpdateMeter "MeterText54"][!UpdateMeter "MeterDelete54"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(54)"]
 LeftMouseUpAction=["[MeasurePath54]"]
 DynamicVariables=1
 
@@ -3820,13 +3877,14 @@ DynamicVariables=1
 
 [MeterText55]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName55
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -3834,7 +3892,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon55 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon55 Greyscale "0"][!SetOption MeterText55 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete55 Hidden "0"][!UpdateMeter "MeterIcon55"][!UpdateMeter "MeterText55"][!UpdateMeter "MeterDelete55"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(55, 'MeasureName55')"]
-MouseLeaveAction=[!SetOption MeterIcon55 ImageAlpha ""][!SetOption MeterIcon55 Greyscale ""][!SetOption MeterText55 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete55 Hidden "1"][!UpdateMeter "MeterIcon55"][!UpdateMeter "MeterText55"][!UpdateMeter "MeterDelete55"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(55)"]
+MouseLeaveAction=[!SetOption MeterIcon55 ImageAlpha ""][!SetOption MeterIcon55 Greyscale ""][!SetOption MeterText55 FontColor ""][!SetOption MeterDelete55 Hidden "1"][!UpdateMeter "MeterIcon55"][!UpdateMeter "MeterText55"][!UpdateMeter "MeterDelete55"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(55)"]
 LeftMouseUpAction=["[MeasurePath55]"]
 DynamicVariables=1
 
@@ -3890,13 +3948,14 @@ DynamicVariables=1
 
 [MeterText56]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName56
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -3904,7 +3963,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon56 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon56 Greyscale "0"][!SetOption MeterText56 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete56 Hidden "0"][!UpdateMeter "MeterIcon56"][!UpdateMeter "MeterText56"][!UpdateMeter "MeterDelete56"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(56, 'MeasureName56')"]
-MouseLeaveAction=[!SetOption MeterIcon56 ImageAlpha ""][!SetOption MeterIcon56 Greyscale ""][!SetOption MeterText56 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete56 Hidden "1"][!UpdateMeter "MeterIcon56"][!UpdateMeter "MeterText56"][!UpdateMeter "MeterDelete56"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(56)"]
+MouseLeaveAction=[!SetOption MeterIcon56 ImageAlpha ""][!SetOption MeterIcon56 Greyscale ""][!SetOption MeterText56 FontColor ""][!SetOption MeterDelete56 Hidden "1"][!UpdateMeter "MeterIcon56"][!UpdateMeter "MeterText56"][!UpdateMeter "MeterDelete56"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(56)"]
 LeftMouseUpAction=["[MeasurePath56]"]
 DynamicVariables=1
 
@@ -3960,13 +4019,14 @@ DynamicVariables=1
 
 [MeterText57]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName57
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -3974,7 +4034,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon57 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon57 Greyscale "0"][!SetOption MeterText57 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete57 Hidden "0"][!UpdateMeter "MeterIcon57"][!UpdateMeter "MeterText57"][!UpdateMeter "MeterDelete57"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(57, 'MeasureName57')"]
-MouseLeaveAction=[!SetOption MeterIcon57 ImageAlpha ""][!SetOption MeterIcon57 Greyscale ""][!SetOption MeterText57 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete57 Hidden "1"][!UpdateMeter "MeterIcon57"][!UpdateMeter "MeterText57"][!UpdateMeter "MeterDelete57"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(57)"]
+MouseLeaveAction=[!SetOption MeterIcon57 ImageAlpha ""][!SetOption MeterIcon57 Greyscale ""][!SetOption MeterText57 FontColor ""][!SetOption MeterDelete57 Hidden "1"][!UpdateMeter "MeterIcon57"][!UpdateMeter "MeterText57"][!UpdateMeter "MeterDelete57"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(57)"]
 LeftMouseUpAction=["[MeasurePath57]"]
 DynamicVariables=1
 
@@ -4030,13 +4090,14 @@ DynamicVariables=1
 
 [MeterText58]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName58
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -4044,7 +4105,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon58 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon58 Greyscale "0"][!SetOption MeterText58 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete58 Hidden "0"][!UpdateMeter "MeterIcon58"][!UpdateMeter "MeterText58"][!UpdateMeter "MeterDelete58"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(58, 'MeasureName58')"]
-MouseLeaveAction=[!SetOption MeterIcon58 ImageAlpha ""][!SetOption MeterIcon58 Greyscale ""][!SetOption MeterText58 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete58 Hidden "1"][!UpdateMeter "MeterIcon58"][!UpdateMeter "MeterText58"][!UpdateMeter "MeterDelete58"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(58)"]
+MouseLeaveAction=[!SetOption MeterIcon58 ImageAlpha ""][!SetOption MeterIcon58 Greyscale ""][!SetOption MeterText58 FontColor ""][!SetOption MeterDelete58 Hidden "1"][!UpdateMeter "MeterIcon58"][!UpdateMeter "MeterText58"][!UpdateMeter "MeterDelete58"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(58)"]
 LeftMouseUpAction=["[MeasurePath58]"]
 DynamicVariables=1
 
@@ -4100,13 +4161,14 @@ DynamicVariables=1
 
 [MeterText59]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName59
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -4114,7 +4176,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon59 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon59 Greyscale "0"][!SetOption MeterText59 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete59 Hidden "0"][!UpdateMeter "MeterIcon59"][!UpdateMeter "MeterText59"][!UpdateMeter "MeterDelete59"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(59, 'MeasureName59')"]
-MouseLeaveAction=[!SetOption MeterIcon59 ImageAlpha ""][!SetOption MeterIcon59 Greyscale ""][!SetOption MeterText59 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete59 Hidden "1"][!UpdateMeter "MeterIcon59"][!UpdateMeter "MeterText59"][!UpdateMeter "MeterDelete59"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(59)"]
+MouseLeaveAction=[!SetOption MeterIcon59 ImageAlpha ""][!SetOption MeterIcon59 Greyscale ""][!SetOption MeterText59 FontColor ""][!SetOption MeterDelete59 Hidden "1"][!UpdateMeter "MeterIcon59"][!UpdateMeter "MeterText59"][!UpdateMeter "MeterDelete59"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(59)"]
 LeftMouseUpAction=["[MeasurePath59]"]
 DynamicVariables=1
 
@@ -4170,13 +4232,14 @@ DynamicVariables=1
 
 [MeterText60]
 Meter=String
+MeterStyle=StyleShortcutText
+Group=ShortcutIcons
 MeasureName=MeasureName60
 W=#TextWidth#
 ClipString=1
 FontFace=#FontName#
 StringAlign=Center
 FontSize=#TextSize#
-FontColor=#TextColor#,#OffAlpha#
 AntiAlias=1
 DynamicVariables=1
 
@@ -4184,7 +4247,7 @@ DynamicVariables=1
 Meter=Image
 SolidColor=0,0,0,1
 MouseOverAction=[!SetOption MeterIcon60 ImageAlpha "#OnAlpha#"][!SetOption MeterIcon60 Greyscale "0"][!SetOption MeterText60 FontColor "#TextColor#,#OnAlpha#"][!SetOption MeterDelete60 Hidden "0"][!UpdateMeter "MeterIcon60"][!UpdateMeter "MeterText60"][!UpdateMeter "MeterDelete60"][!Redraw][!CommandMeasure MeasureLuaScript "StartHover(60, 'MeasureName60')"]
-MouseLeaveAction=[!SetOption MeterIcon60 ImageAlpha ""][!SetOption MeterIcon60 Greyscale ""][!SetOption MeterText60 FontColor "#TextColor#,#OffAlpha#"][!SetOption MeterDelete60 Hidden "1"][!UpdateMeter "MeterIcon60"][!UpdateMeter "MeterText60"][!UpdateMeter "MeterDelete60"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(60)"]
+MouseLeaveAction=[!SetOption MeterIcon60 ImageAlpha ""][!SetOption MeterIcon60 Greyscale ""][!SetOption MeterText60 FontColor ""][!SetOption MeterDelete60 Hidden "1"][!UpdateMeter "MeterIcon60"][!UpdateMeter "MeterText60"][!UpdateMeter "MeterDelete60"][!Redraw][!CommandMeasure MeasureLuaScript "EndHover(60)"]
 LeftMouseUpAction=["[MeasurePath60]"]
 DynamicVariables=1
 
