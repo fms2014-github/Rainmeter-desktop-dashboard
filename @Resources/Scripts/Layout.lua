@@ -1,5 +1,6 @@
 -- ★ 추가됨: 현재 마우스가 올라간 아이콘 번호를 기억하는 변수
 local currentHoverIndex = 0
+local currentHoverMeasure
 
 -- ========================================
 -- ★ 픽셀 시프팅 관련 변수
@@ -27,6 +28,16 @@ function Initialize()
     
     -- 스킨 로드(또는 새로고침) 시 최초 1회 정중앙 배치 및 시프팅 적용
     ApplyPixelShift()
+end
+
+function ToggleIconMode()
+    local greyscale = SKIN:GetVariable('IconGreyscale') == '1' and '0' or '1'
+    SKIN:Bang('!SetVariable', 'IconGreyscale', greyscale)
+    SKIN:Bang('!WriteKeyValue', 'Variables', 'IconGreyscale', greyscale, SKIN:GetVariable('@') .. 'Variables.inc')
+    SKIN:Bang('!UpdateMeasure', 'MeasureIconMode')
+    SKIN:Bang('!UpdateMeter', 'MeterIconMode')
+    SKIN:Bang('!UpdateMeterGroup', 'ShortcutIcons')
+    SKIN:Bang('!Redraw')
 end
 
 -- ★ 추가됨: 스킨을 정중앙에 배치하고 오프셋만큼 이동시키는 함수
@@ -138,8 +149,7 @@ end
 -- 마우스를 올릴 때 타이머를 시작합니다.
 function StartHover(index, measureName)
     currentHoverIndex = tonumber(index)
-    SKIN:Bang('!SetVariable', 'HoveredIndex', index)
-    SKIN:Bang('!SetVariable', 'HoveredMeasure', measureName)
+    currentHoverMeasure = measureName
     SKIN:Bang('!CommandMeasure', 'MeasureToolTipTimer', 'Stop 1')
     SKIN:Bang('!CommandMeasure', 'MeasureToolTipTimer', 'Execute 1')
 end
@@ -160,13 +170,13 @@ function EndHover(index)
 end
 
 -- 0.5초 뒤에 실행되는 툴팁 표시 함수
-function ShowToolTip(index, measureName)
-    -- ★ 이중 검증: 0.5초가 지난 지금, 마우스가 딴 데로 갔다면 무시합니다! (잔상 버그 완벽 차단)
-    if currentHoverIndex ~= tonumber(index) then
+function ShowToolTip()
+    local index = currentHoverIndex
+    if index == 0 then
         return
     end
 
-    local measure = SKIN:GetMeasure(measureName)
+    local measure = SKIN:GetMeasure(currentHoverMeasure)
     local text = measure and measure:GetStringValue() or ""
     
     local textMeter = SKIN:GetMeter('MeterText'..index)
