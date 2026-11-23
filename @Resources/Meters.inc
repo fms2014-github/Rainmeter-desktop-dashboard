@@ -14,7 +14,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=1
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath1]
 Measure=Plugin
@@ -85,7 +85,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=2
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath2]
 Measure=Plugin
@@ -156,7 +156,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=3
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath3]
 Measure=Plugin
@@ -227,7 +227,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=4
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath4]
 Measure=Plugin
@@ -298,7 +298,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=5
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath5]
 Measure=Plugin
@@ -369,7 +369,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=6
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath6]
 Measure=Plugin
@@ -440,7 +440,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=7
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath7]
 Measure=Plugin
@@ -511,7 +511,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=8
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath8]
 Measure=Plugin
@@ -582,7 +582,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=9
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath9]
 Measure=Plugin
@@ -653,7 +653,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=10
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath10]
 Measure=Plugin
@@ -724,7 +724,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=11
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath11]
 Measure=Plugin
@@ -795,7 +795,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=12
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath12]
 Measure=Plugin
@@ -866,7 +866,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=13
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath13]
 Measure=Plugin
@@ -937,7 +937,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=14
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath14]
 Measure=Plugin
@@ -1008,7 +1008,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=15
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath15]
 Measure=Plugin
@@ -1079,7 +1079,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=16
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath16]
 Measure=Plugin
@@ -1150,7 +1150,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=17
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath17]
 Measure=Plugin
@@ -1221,7 +1221,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=18
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath18]
 Measure=Plugin
@@ -1292,7 +1292,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=19
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath19]
 Measure=Plugin
@@ -1363,7 +1363,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=20
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath20]
 Measure=Plugin
@@ -1434,7 +1434,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=21
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath21]
 Measure=Plugin
@@ -1505,7 +1505,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=22
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath22]
 Measure=Plugin
@@ -1576,7 +1576,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=23
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath23]
 Measure=Plugin
@@ -1647,7 +1647,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=24
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath24]
 Measure=Plugin
@@ -1718,7 +1718,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=25
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath25]
 Measure=Plugin
@@ -1789,7 +1789,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=26
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath26]
 Measure=Plugin
@@ -1860,7 +1860,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=27
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath27]
 Measure=Plugin
@@ -1931,7 +1931,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=28
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath28]
 Measure=Plugin
@@ -2002,7 +2002,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=29
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath29]
 Measure=Plugin
@@ -2073,7 +2073,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=30
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath30]
 Measure=Plugin
@@ -2144,7 +2144,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=31
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath31]
 Measure=Plugin
@@ -2215,7 +2215,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=32
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath32]
 Measure=Plugin
@@ -2286,7 +2286,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=33
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath33]
 Measure=Plugin
@@ -2357,7 +2357,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=34
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath34]
 Measure=Plugin
@@ -2428,7 +2428,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=35
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath35]
 Measure=Plugin
@@ -2499,7 +2499,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=36
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath36]
 Measure=Plugin
@@ -2570,7 +2570,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=37
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath37]
 Measure=Plugin
@@ -2641,7 +2641,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=38
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath38]
 Measure=Plugin
@@ -2712,7 +2712,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=39
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath39]
 Measure=Plugin
@@ -2783,7 +2783,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=40
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath40]
 Measure=Plugin
@@ -2854,7 +2854,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=41
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath41]
 Measure=Plugin
@@ -2925,7 +2925,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=42
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath42]
 Measure=Plugin
@@ -2996,7 +2996,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=43
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath43]
 Measure=Plugin
@@ -3067,7 +3067,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=44
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath44]
 Measure=Plugin
@@ -3138,7 +3138,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=45
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath45]
 Measure=Plugin
@@ -3209,7 +3209,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=46
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath46]
 Measure=Plugin
@@ -3280,7 +3280,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=47
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath47]
 Measure=Plugin
@@ -3351,7 +3351,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=48
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath48]
 Measure=Plugin
@@ -3422,7 +3422,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=49
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath49]
 Measure=Plugin
@@ -3493,7 +3493,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=50
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath50]
 Measure=Plugin
@@ -3564,7 +3564,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=51
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath51]
 Measure=Plugin
@@ -3635,7 +3635,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=52
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath52]
 Measure=Plugin
@@ -3706,7 +3706,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=53
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath53]
 Measure=Plugin
@@ -3777,7 +3777,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=54
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath54]
 Measure=Plugin
@@ -3848,7 +3848,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=55
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath55]
 Measure=Plugin
@@ -3919,7 +3919,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=56
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath56]
 Measure=Plugin
@@ -3990,7 +3990,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=57
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath57]
 Measure=Plugin
@@ -4061,7 +4061,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=58
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath58]
 Measure=Plugin
@@ -4132,7 +4132,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=59
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath59]
 Measure=Plugin
@@ -4203,7 +4203,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index=60
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath60]
 Measure=Plugin

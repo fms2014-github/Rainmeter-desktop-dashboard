@@ -20,7 +20,7 @@ Plugin=FileView
 Path=[MeasureFolder]
 Type=Icon
 Index={i}
-IconSize=ExtraLarge 
+IconSize=Large
 
 [MeasurePath{i}]
 Measure=Plugin
