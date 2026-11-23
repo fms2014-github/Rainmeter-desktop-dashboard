@@ -15,6 +15,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=1
 IconSize=Large
+IconPath=#@#IconCache\icon1.ico
 
 [MeasurePath1]
 Measure=Plugin
@@ -86,6 +87,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=2
 IconSize=Large
+IconPath=#@#IconCache\icon2.ico
 
 [MeasurePath2]
 Measure=Plugin
@@ -157,6 +159,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=3
 IconSize=Large
+IconPath=#@#IconCache\icon3.ico
 
 [MeasurePath3]
 Measure=Plugin
@@ -228,6 +231,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=4
 IconSize=Large
+IconPath=#@#IconCache\icon4.ico
 
 [MeasurePath4]
 Measure=Plugin
@@ -299,6 +303,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=5
 IconSize=Large
+IconPath=#@#IconCache\icon5.ico
 
 [MeasurePath5]
 Measure=Plugin
@@ -370,6 +375,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=6
 IconSize=Large
+IconPath=#@#IconCache\icon6.ico
 
 [MeasurePath6]
 Measure=Plugin
@@ -441,6 +447,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=7
 IconSize=Large
+IconPath=#@#IconCache\icon7.ico
 
 [MeasurePath7]
 Measure=Plugin
@@ -512,6 +519,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=8
 IconSize=Large
+IconPath=#@#IconCache\icon8.ico
 
 [MeasurePath8]
 Measure=Plugin
@@ -583,6 +591,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=9
 IconSize=Large
+IconPath=#@#IconCache\icon9.ico
 
 [MeasurePath9]
 Measure=Plugin
@@ -654,6 +663,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=10
 IconSize=Large
+IconPath=#@#IconCache\icon10.ico
 
 [MeasurePath10]
 Measure=Plugin
@@ -725,6 +735,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=11
 IconSize=Large
+IconPath=#@#IconCache\icon11.ico
 
 [MeasurePath11]
 Measure=Plugin
@@ -796,6 +807,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=12
 IconSize=Large
+IconPath=#@#IconCache\icon12.ico
 
 [MeasurePath12]
 Measure=Plugin
@@ -867,6 +879,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=13
 IconSize=Large
+IconPath=#@#IconCache\icon13.ico
 
 [MeasurePath13]
 Measure=Plugin
@@ -938,6 +951,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=14
 IconSize=Large
+IconPath=#@#IconCache\icon14.ico
 
 [MeasurePath14]
 Measure=Plugin
@@ -1009,6 +1023,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=15
 IconSize=Large
+IconPath=#@#IconCache\icon15.ico
 
 [MeasurePath15]
 Measure=Plugin
@@ -1080,6 +1095,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=16
 IconSize=Large
+IconPath=#@#IconCache\icon16.ico
 
 [MeasurePath16]
 Measure=Plugin
@@ -1151,6 +1167,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=17
 IconSize=Large
+IconPath=#@#IconCache\icon17.ico
 
 [MeasurePath17]
 Measure=Plugin
@@ -1222,6 +1239,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=18
 IconSize=Large
+IconPath=#@#IconCache\icon18.ico
 
 [MeasurePath18]
 Measure=Plugin
@@ -1293,6 +1311,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=19
 IconSize=Large
+IconPath=#@#IconCache\icon19.ico
 
 [MeasurePath19]
 Measure=Plugin
@@ -1364,6 +1383,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=20
 IconSize=Large
+IconPath=#@#IconCache\icon20.ico
 
 [MeasurePath20]
 Measure=Plugin
@@ -1435,6 +1455,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=21
 IconSize=Large
+IconPath=#@#IconCache\icon21.ico
 
 [MeasurePath21]
 Measure=Plugin
@@ -1506,6 +1527,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=22
 IconSize=Large
+IconPath=#@#IconCache\icon22.ico
 
 [MeasurePath22]
 Measure=Plugin
@@ -1577,6 +1599,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=23
 IconSize=Large
+IconPath=#@#IconCache\icon23.ico
 
 [MeasurePath23]
 Measure=Plugin
@@ -1648,6 +1671,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=24
 IconSize=Large
+IconPath=#@#IconCache\icon24.ico
 
 [MeasurePath24]
 Measure=Plugin
@@ -1719,6 +1743,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=25
 IconSize=Large
+IconPath=#@#IconCache\icon25.ico
 
 [MeasurePath25]
 Measure=Plugin
@@ -1790,6 +1815,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=26
 IconSize=Large
+IconPath=#@#IconCache\icon26.ico
 
 [MeasurePath26]
 Measure=Plugin
@@ -1861,6 +1887,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=27
 IconSize=Large
+IconPath=#@#IconCache\icon27.ico
 
 [MeasurePath27]
 Measure=Plugin
@@ -1932,6 +1959,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=28
 IconSize=Large
+IconPath=#@#IconCache\icon28.ico
 
 [MeasurePath28]
 Measure=Plugin
@@ -2003,6 +2031,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=29
 IconSize=Large
+IconPath=#@#IconCache\icon29.ico
 
 [MeasurePath29]
 Measure=Plugin
@@ -2074,6 +2103,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=30
 IconSize=Large
+IconPath=#@#IconCache\icon30.ico
 
 [MeasurePath30]
 Measure=Plugin
@@ -2145,6 +2175,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=31
 IconSize=Large
+IconPath=#@#IconCache\icon31.ico
 
 [MeasurePath31]
 Measure=Plugin
@@ -2216,6 +2247,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=32
 IconSize=Large
+IconPath=#@#IconCache\icon32.ico
 
 [MeasurePath32]
 Measure=Plugin
@@ -2287,6 +2319,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=33
 IconSize=Large
+IconPath=#@#IconCache\icon33.ico
 
 [MeasurePath33]
 Measure=Plugin
@@ -2358,6 +2391,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=34
 IconSize=Large
+IconPath=#@#IconCache\icon34.ico
 
 [MeasurePath34]
 Measure=Plugin
@@ -2429,6 +2463,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=35
 IconSize=Large
+IconPath=#@#IconCache\icon35.ico
 
 [MeasurePath35]
 Measure=Plugin
@@ -2500,6 +2535,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=36
 IconSize=Large
+IconPath=#@#IconCache\icon36.ico
 
 [MeasurePath36]
 Measure=Plugin
@@ -2571,6 +2607,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=37
 IconSize=Large
+IconPath=#@#IconCache\icon37.ico
 
 [MeasurePath37]
 Measure=Plugin
@@ -2642,6 +2679,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=38
 IconSize=Large
+IconPath=#@#IconCache\icon38.ico
 
 [MeasurePath38]
 Measure=Plugin
@@ -2713,6 +2751,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=39
 IconSize=Large
+IconPath=#@#IconCache\icon39.ico
 
 [MeasurePath39]
 Measure=Plugin
@@ -2784,6 +2823,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=40
 IconSize=Large
+IconPath=#@#IconCache\icon40.ico
 
 [MeasurePath40]
 Measure=Plugin
@@ -2855,6 +2895,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=41
 IconSize=Large
+IconPath=#@#IconCache\icon41.ico
 
 [MeasurePath41]
 Measure=Plugin
@@ -2926,6 +2967,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=42
 IconSize=Large
+IconPath=#@#IconCache\icon42.ico
 
 [MeasurePath42]
 Measure=Plugin
@@ -2997,6 +3039,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=43
 IconSize=Large
+IconPath=#@#IconCache\icon43.ico
 
 [MeasurePath43]
 Measure=Plugin
@@ -3068,6 +3111,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=44
 IconSize=Large
+IconPath=#@#IconCache\icon44.ico
 
 [MeasurePath44]
 Measure=Plugin
@@ -3139,6 +3183,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=45
 IconSize=Large
+IconPath=#@#IconCache\icon45.ico
 
 [MeasurePath45]
 Measure=Plugin
@@ -3210,6 +3255,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=46
 IconSize=Large
+IconPath=#@#IconCache\icon46.ico
 
 [MeasurePath46]
 Measure=Plugin
@@ -3281,6 +3327,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=47
 IconSize=Large
+IconPath=#@#IconCache\icon47.ico
 
 [MeasurePath47]
 Measure=Plugin
@@ -3352,6 +3399,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=48
 IconSize=Large
+IconPath=#@#IconCache\icon48.ico
 
 [MeasurePath48]
 Measure=Plugin
@@ -3423,6 +3471,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=49
 IconSize=Large
+IconPath=#@#IconCache\icon49.ico
 
 [MeasurePath49]
 Measure=Plugin
@@ -3494,6 +3543,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=50
 IconSize=Large
+IconPath=#@#IconCache\icon50.ico
 
 [MeasurePath50]
 Measure=Plugin
@@ -3565,6 +3615,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=51
 IconSize=Large
+IconPath=#@#IconCache\icon51.ico
 
 [MeasurePath51]
 Measure=Plugin
@@ -3636,6 +3687,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=52
 IconSize=Large
+IconPath=#@#IconCache\icon52.ico
 
 [MeasurePath52]
 Measure=Plugin
@@ -3707,6 +3759,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=53
 IconSize=Large
+IconPath=#@#IconCache\icon53.ico
 
 [MeasurePath53]
 Measure=Plugin
@@ -3778,6 +3831,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=54
 IconSize=Large
+IconPath=#@#IconCache\icon54.ico
 
 [MeasurePath54]
 Measure=Plugin
@@ -3849,6 +3903,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=55
 IconSize=Large
+IconPath=#@#IconCache\icon55.ico
 
 [MeasurePath55]
 Measure=Plugin
@@ -3920,6 +3975,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=56
 IconSize=Large
+IconPath=#@#IconCache\icon56.ico
 
 [MeasurePath56]
 Measure=Plugin
@@ -3991,6 +4047,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=57
 IconSize=Large
+IconPath=#@#IconCache\icon57.ico
 
 [MeasurePath57]
 Measure=Plugin
@@ -4062,6 +4119,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=58
 IconSize=Large
+IconPath=#@#IconCache\icon58.ico
 
 [MeasurePath58]
 Measure=Plugin
@@ -4133,6 +4191,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=59
 IconSize=Large
+IconPath=#@#IconCache\icon59.ico
 
 [MeasurePath59]
 Measure=Plugin
@@ -4204,6 +4263,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index=60
 IconSize=Large
+IconPath=#@#IconCache\icon60.ico
 
 [MeasurePath60]
 Measure=Plugin

@@ -112,7 +112,9 @@
 | `@Resources/Variables.inc` | 사용자 설정과 저장된 컬러·흑백 모드 |
 | `@Resources/Meters.inc` | 공통 스타일과 60세트의 바로가기 측정값·표시 요소 |
 | `@Resources/Scripts/Layout.lua` | 배치, 페이징 버튼 표시, 모드 저장, 툴팁, 삭제, 픽셀 시프팅 |
+| `@Resources/Scripts/InitializeResources.ps1` | 바로가기·아이콘 캐시 폴더 생성 및 패키지 제외를 위한 숨김 속성 설정 |
 | `@Resources/Shortcuts/` | 사용자가 추가하는 `.lnk`, `.url` 바로가기 |
+| `@Resources/IconCache/` | FileView가 생성하는 아이콘 캐시 |
 | `generator.py` | `Meters.inc` 생성 템플릿 |
 
 아이콘이나 이름의 공통 표시·호버 동작을 수정할 때는 `generator.py`를 편집하고, Python 3으로 저장소 루트에서 실행합니다.
@@ -127,6 +129,23 @@ python generator.py
 * 아이콘과 이름은 `ShortcutIcons` 그룹으로 묶여 모드 전환 시 함께 갱신됩니다.
 * 툴팁 타이머는 500ms 뒤 `ShowToolTip()`을 호출하고, Lua가 기억한 현재 호버 대상의 이름을 읽습니다.
 * FileView의 `IconSize=Large`는 추출 크기 옵션이며, `Variables.inc`의 `IconSize=48`은 화면 표시 크기를 정합니다.
+
+### .rmskin 패키지 만들기
+
+스킨을 불러오거나 새로고침하면 Windows PowerShell이 `Shortcuts`와 `IconCache` 폴더를 생성하고 숨김 속성을 설정합니다. Rainmeter의 Skin Packager는 숨김 파일과 폴더를 제외하므로 개인 바로가기와 생성된 아이콘 캐시가 패키지에서 빠집니다. 이전 버전이 스킨 루트에 만든 `icon1.ico` 등의 파일도 숨김 처리합니다. [Rainmeter 패키징 문서](https://docs.rainmeter.net/manual/distributing-skins/index.html)
+
+1. `DesktopDashboard\Main.ini`를 새로고침하고 바로가기 목록이 나타날 때까지 기다립니다.
+2. Rainmeter 관리 창의 **.rmskin 패키지 만들기**에서 `DesktopDashboard` 스킨 폴더를 선택합니다.
+3. 기존 사용자의 바로가기 폴더를 유지하며 업데이트하려면 **Advanced → Merge skins**를 선택합니다.
+4. 패키지 정보와 저장 위치를 지정한 뒤 **Create package**를 누릅니다.
+
+Git으로 새로 받은 폴더를 스킨 실행 없이 패키징할 때는 저장소 루트에서 다음 명령을 먼저 실행합니다. Windows의 숨김 속성은 Git에 저장되지 않습니다.
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\@Resources\Scripts\InitializeResources.ps1"
+```
+
+설치된 스킨을 처음 불러오면 필요한 폴더가 자동으로 준비됩니다. **➕ 추가**로 바로가기 폴더를 열어 아이콘을 추가할 수 있습니다.
 
 ---
 

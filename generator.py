@@ -21,6 +21,7 @@ Path=[MeasureFolder]
 Type=Icon
 Index={i}
 IconSize=Large
+IconPath=#@#IconCache\\icon{i}.ico
 
 [MeasurePath{i}]
 Measure=Plugin
